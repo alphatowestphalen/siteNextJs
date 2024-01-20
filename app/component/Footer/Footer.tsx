@@ -43,10 +43,10 @@ const Footer = () => {
                     type="text"
                     id="footer-field"
                     name="footer-field"
-                    className="w-full md:w-48 bg-white px-2 focus:ring-indigo-200 text-base outline-none text-gray-700  leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full md:w-48 bg-transparent border-x-2 border-y-2 border-white px-2 focus:ring-indigo-200 text-base outline-none text-white  leading-8 transition-colors duration-200 ease-in-out"
                   />
-                  <button className="lg:mt-2 xl:mt-0 w-32 flex-shrink-0 h-12 text-white bg-indigo-500 border-0  px-6 focus:outline-none">
-                    Button
+                  <button style={{ fontFamily: "Josefin_Sans" }} className="lg:mt-2 xl:mt-0 w-32 flex-shrink-0 h-12 text-gray-900 bg-white border-0  px-6 focus:outline-none">
+                    Envoyer
                   </button>
                 </div>
               </div>
