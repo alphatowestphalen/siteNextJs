@@ -11,8 +11,8 @@ const TopHeader = () => {
             </button>
             <div className="flex justify-evenly items-center w-1/4 ">
               <Image
-                src="/assets/icons/Cart.png"
-                alt="Cart"
+                src='/assets/icons/Cart.png'
+                alt='Cart'
                 width={25}
                 height={10}
               />

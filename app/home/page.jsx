@@ -46,7 +46,7 @@ const HomePage = () => {
             <Image
               width={600}
               height={400}
-              src="/assets/home/image.png"
+              src='/assets/home/image.png'
               className=" max-w-xs w-96 m-auto md:max-w-sm"
             />
           </div>
@@ -59,7 +59,7 @@ const HomePage = () => {
             <div className="p-4 md:w-1/3 flex">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
-                  src="/assets/images/icons/Location.png"
+                  src='/assets/images/icons/Location.png'
                   width={25}
                   height={20}
                 />
@@ -82,7 +82,7 @@ const HomePage = () => {
             >
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
-                  src="/assets/images/icons/Group42.png"
+                  src='/assets/images/icons/Group42.png'
                   width={25}
                   height={20}
                 />
@@ -102,7 +102,7 @@ const HomePage = () => {
             >
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
-                  src="/assets/images/icons/Reserve.png"
+                  src='/assets/images/icons/Reserve.png'
                   width={25}
                   height={20}
                 />
@@ -124,9 +124,9 @@ const HomePage = () => {
               <Image
                 width={400}
                 height={100}
-                alt="ecommerce"
+                alt='ecommerce'
                 className="lg:w-1/2 object-cover rounded-lg"
-                src="/assets/home/histoire.png"
+                src='/assets/home/histoire.png'
               />
               <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 lg:mt-0">
                 <h1
@@ -183,9 +183,9 @@ const HomePage = () => {
             <Image
               width={300}
               height={50}
-              alt="ecommerce"
+              alt='ecommerce'
               className="lg:w-auto pt-4 w-full object-cover"
-              src="/assets/images/home/menu.png"
+              src='/assets/images/home/menu.png'
             />
             {/* <img alt="feature" class="object-cover object-center h-full w-full" src="https://dummyimage.com/460x500"> */}
           </div>
@@ -199,7 +199,7 @@ const HomePage = () => {
             <div className=" md:w-2/3 pt-9 flex">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
-                  src="/assets/images/home/vilany kely.png"
+                  src='/assets/images/home/vilany kely.png'
                   width={100}
                   height={50}
                 />
@@ -222,7 +222,7 @@ const HomePage = () => {
             <div className=" md:w-2/3 pt-4 flex">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
-                  src="/assets/images/home/vilany kely.png"
+                  src='/assets/images/home/vilany kely.png'
                   width={100}
                   height={50}
                 />
@@ -245,7 +245,7 @@ const HomePage = () => {
             <div className=" md:w-2/3 pt-4 flex">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
-                  src="/assets/images/home/vilany kely.png"
+                  src='/assets/images/home/vilany kely.png'
                   width={100}
                   height={50}
                 />
@@ -268,7 +268,7 @@ const HomePage = () => {
             <div className=" md:w-2/3 pt-4 flex">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
-                  src="/assets/images/home/vilany kely.png"
+                  src='/assets/images/home/vilany kely.png'
                   width={100}
                   height={50}
                 />
@@ -298,7 +298,7 @@ const HomePage = () => {
               <div className=" md:w-2/3 pt-9 flex">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                   <Image
-                    src="/assets/images/home/vilany kely.png"
+                    src='/assets/images/home/vilany kely.png'
                     width={100}
                     height={50}
                   />
@@ -321,7 +321,7 @@ const HomePage = () => {
               <div className=" md:w-2/3 pt-4 flex">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                   <Image
-                    src="/assets/images/home/vilany kely.png"
+                    src='/assets/images/home/vilany kely.png'
                     width={100}
                     height={50}
                   />
@@ -344,7 +344,7 @@ const HomePage = () => {
               <div className=" md:w-2/3 pt-4 flex">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                   <Image
-                    src="/assets/images/home/vilany kely.png"
+                    src='/assets/images/home/vilany kely.png'
                     width={100}
                     height={50}
                   />
@@ -367,7 +367,7 @@ const HomePage = () => {
               <div className=" md:w-2/3 py-4 flex">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                   <Image
-                    src="/assets/images/home/vilany kely.png"
+                    src='/assets/images/home/vilany kely.png'
                     width={100}
                     height={50}
                   />
@@ -398,7 +398,7 @@ const HomePage = () => {
                 <div className=" md:w-2/3 pt-9 flex">
                   <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                     <Image
-                      src="/assets/images/home/vilany kely.png"
+                      src='/assets/images/home/vilany kely.png'
                       width={100}
                       height={50}
                     />
@@ -421,7 +421,7 @@ const HomePage = () => {
                 <div className=" md:w-2/3 pt-4 flex">
                   <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                     <Image
-                      src="/assets/images/home/vilany kely.png"
+                      src='/assets/images/home/vilany kely.png'
                       width={100}
                       height={50}
                     />
@@ -444,7 +444,7 @@ const HomePage = () => {
                 <div className=" md:w-2/3 pt-4 flex">
                   <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                     <Image
-                      src="/assets/images/home/vilany kely.png"
+                      src='/assets/images/home/vilany kely.png'
                       width={100}
                       height={50}
                     />
@@ -588,8 +588,8 @@ const HomePage = () => {
                 </div>
               </div>
               <Image
-                alt="testimonial"
-                src="/assets/images/home/temoingage.png"
+                alt='testimonial'
+                src='/assets/images/home/temoingage.png'
                 width={500}
                 height={100}
                 className="w-full h-96 mt-10 flex-shrink-0 object-cover object-center"
@@ -822,7 +822,7 @@ const HomePage = () => {
             <div class="border-8 py-12 border-gray-800 text-center  items-center">
               <div className="flex  justify-center">
                 <Image
-                  src="/assets/images/icons/Icon2.png"
+                  src='/assets/images/icons/Icon2.png'
                   width={40}
                   height={20}
                 />
@@ -839,7 +839,7 @@ const HomePage = () => {
             <div class="border-8 py-12 border-gray-800 text-center  items-center">
               <div className="flex  justify-center">
                 <Image
-                  src="/assets/images/icons/Icon.png"
+                  src='/assets/images/icons/Icon.png'
                   width={40}
                   height={20}
                 />
@@ -859,7 +859,7 @@ const HomePage = () => {
 
       <div className="relative">
         <Image
-          src="/assets/images/home/Background.png"
+          src='/assets/images/home/Background.png'
           alt="tena hita ve le sary"
           width={500}
           height={100}

@@ -59,13 +59,13 @@ const NavBar = () => {
               <div className="flex justify-around w-24 items-center ml-4 md:ml-6">
                 {/* <div className="flex items-center justify-center"> */}
                 <Image
-                  src="/assets/images/icons/fb.png"
+                  src='/assets/images/icons/fb.png'
                   width={24}
                   height={20}
                 />
 
                 <Image
-                  src="/assets/images/icons/Insta.png"
+                  src='/assets/images/icons/Insta.png'
                   width={24}
                   height={20}
                 />
