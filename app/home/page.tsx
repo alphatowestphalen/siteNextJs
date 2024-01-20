@@ -1,7 +1,13 @@
-import Image from 'next/image';
-import React from 'react';
 
-const HomePage = () => {
+'use client'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Cardflex from '../component/Card/Cardflex';
+import BottonWithBorder from '../component/Botton/BottonWithBorder/BottonWithBorder';
+
+const HomePage: React.FC = () => {
+  const [title,setTitle] = useState<string>('Reservation')
+  const [menu,setMenu] = useState<string>('menu')
   return (
     <>
       <div className=' pt-10 flex justify-center overflow-hidden  bg-white dark:bg-gray-900'>
@@ -14,7 +20,7 @@ const HomePage = () => {
               }}
               className='flex flex-col text-4xl font-black leading-normal text-gray-800  md:text-8xl md:w-screen dark:text-white'
             >
-              Bienvenue au
+              {`Bienvenue au`}
             </h1>
             <span
               style={{
@@ -23,14 +29,14 @@ const HomePage = () => {
               }}
               className=' text-4xl font-black leading-none text-gray-800 md:w-screen dark:text-white md:text-7xl'
             >
-              La table du rova
+              {`La table du rova`}
             </span>
             <p
               style={{ fontFamily: 'Josefin_Sans', fontSize: '20px' }}
               className='mt-4 text-gray-700 text-sm leading-snug sm:text-base dark:text-white'
             >
-              Une nouvelle étape gourmande sur la RN7 à FIANARANTSOA au cœur de
-              la Haute Ville, quartier historique éminemment pittoresque.
+             {` Une nouvelle étape gourmande sur la RN7 à FIANARANTSOA au cœur de
+              la Haute Ville, quartier historique éminemment pittoresque.`}
             </p>
             <div className='mt-10'>
               <a
@@ -38,12 +44,13 @@ const HomePage = () => {
                 href='#'
                 className='px-4 py-3 text-pink-500 uppercase bg-transparent border-2 border-orange-300 dark:text-white hover:bg-orange-300 hover:text-gray-900 text-md'
               >
-                Voire Menu
+                {`Voire Menu`}
               </a>
             </div>
           </div>
           <div className='relative z-50 hidden md:ml-52 sm:block sm:w-1/3 lg:w-5/6'>
             <Image
+              alt='image'
               width={600}
               height={400}
               src='/assets/home/image.png'
@@ -59,6 +66,7 @@ const HomePage = () => {
             <div className='p-4 md:w-1/3 flex'>
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
+                  alt='location'
                   src='/assets/images/icons/Location.png'
                   width={25}
                   height={20}
@@ -69,10 +77,10 @@ const HomePage = () => {
                 className='flex-grow pl-6'
               >
                 <h2 className='text-gray-900 text-lg title-font font-medium mb-2'>
-                  Localisation
+                  {`Localisation`}
                 </h2>
                 <p className='leading-relaxed text-base'>
-                  IR 19, Ville Haute Fianarantsoa
+                  {`IR 19, Ville Haute Fianarantsoa`}
                 </p>
               </div>
             </div>
@@ -82,6 +90,7 @@ const HomePage = () => {
             >
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
+                  alt='group42'
                   src='/assets/images/icons/Group42.png'
                   width={25}
                   height={20}
@@ -89,10 +98,10 @@ const HomePage = () => {
               </div>
               <div className='flex-grow pl-6'>
                 <h2 className='text-gray-900 text-lg title-font font-medium mb-2'>
-                  Heurs Ouverture
+                  {`Heurs Ouverture`}
                 </h2>
                 <p className='leading-relaxed text-base'>
-                  7jours/7 9:00 AM - 9:00 PM
+                  {`7jours / 7 9:00 AM - 9:00 PM`}
                 </p>
               </div>
             </div>
@@ -102,6 +111,7 @@ const HomePage = () => {
             >
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
+                  alt='reserver'
                   src='/assets/images/icons/Reserve.png'
                   width={25}
                   height={20}
@@ -109,10 +119,10 @@ const HomePage = () => {
               </div>
               <div className='flex-grow pl-6'>
                 <h2 className='text-gray-900 text-lg title-font font-medium mb-2'>
-                  Reservation
+                  {`Reservation`}
                 </h2>
                 <p className='leading-relaxed text-base'>
-                  latabledurova@gmail.com
+                  {`latabledurova@gmail.com`}
                 </p>
               </div>
             </div>
@@ -133,13 +143,13 @@ const HomePage = () => {
                   style={{ fontFamily: 'cormorant' }}
                   className='text-gray-900 py-5 text-3xl title-font font-semibold'
                 >
-                  Histoire
+                  {`Histoire`}
                 </h1>
                 <p
                   style={{ fontFamily: 'Josefin_Sans' }}
                   className='leading-relaxed'
                 >
-                  Au cœur de la vieille ville de Tanana Ambony, La Table du Rova
+                  {`Au cœur de la vieille ville de Tanana Ambony, La Table du Rova
                   émerge comme un joyau gastronomique créé par une équipe de
                   jeunes entrepreneurs. Inspiré par l'héritage culturel de
                   Madagascar, ce restaurant tire son nom du célèbre Rova,
@@ -151,7 +161,7 @@ const HomePage = () => {
                   culinaire de Madagascar, invitant les convives à un voyage
                   mémorable à travers chaque plat. Aujourd'hui, La Table du Rova
                   continue d'être un lieu où la culture et la cuisine se
-                  rencontrent, créant une aventure gustative captivante.
+                  rencontrent, créant une aventure gustative captivante.`}
                 </p>
               </div>
             </div>
@@ -159,9 +169,9 @@ const HomePage = () => {
         </section>
       </section>
 
-      <section class='text-gray-600 body-font'>
-        <div class='container  px-5 mt-20 md:pt-20 mx-auto justify-center flex flex-wrap'>
-          <div class=' mb-10 lg:mb-0 rounded-lg overflow-hidden'>
+      <section className='text-gray-600 body-font'>
+        <div className='container  px-5 mt-20 md:pt-20 mx-auto justify-center flex flex-wrap'>
+          <div className=' mb-10 lg:mb-0 rounded-lg overflow-hidden'>
             <h3
               style={{ fontFamily: 'Josefin_Sans' }}
               className=' inline-block px-6 py-1  text-sm border-orange-300 border-y-2'
@@ -173,11 +183,11 @@ const HomePage = () => {
                 style={{ fontFamily: 'cormorant' }}
                 className='w-auto font-black pt-3 text-3xl leading-none text-gray-800  font-bebas-neue'
               >
-                Essayez nos offres spéciales.
+                {`Essayez nos offres spéciales.`}
               </h1>
               <p style={{ fontFamily: 'Josefin_Sans' }} className='py-3 '>
-                Découvrez l'exceptionnel avec nos offres spéciales qui vont
-                égayer votre expérience et vous offrir des avantages exclusifs.
+                {`Découvrez l'exceptionnel avec nos offres spéciales qui vont
+                égayer votre expérience et vous offrir des avantages exclusifs.`}
               </p>
             </div>
             <Image
@@ -189,7 +199,7 @@ const HomePage = () => {
             />
             {/* <img alt='feature' class='object-cover object-center h-full w-full' src='https://dummyimage.com/460x500'> */}
           </div>
-          <div class='flex flex-col  flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-24 lg:text-left text-center'>
+          <div className='flex flex-col  flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-24 lg:text-left text-center'>
             <h1
               style={{ fontFamily: 'cormorsant' }}
               className='w-auto font-semibold text-2xl leading-none text-gray-800  font-bebas-neue sm:text-8x'
@@ -199,6 +209,7 @@ const HomePage = () => {
             <div className=' md:w-2/3 pt-9 flex'>
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
+                  alt='vilanykely'
                   src='/assets/images/home/vilany kely.png'
                   width={100}
                   height={50}
@@ -222,6 +233,7 @@ const HomePage = () => {
             <div className=' md:w-2/3 pt-4 flex'>
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
+                  alt='vilanykely'
                   src='/assets/images/home/vilany kely.png'
                   width={100}
                   height={50}
@@ -245,6 +257,7 @@ const HomePage = () => {
             <div className=' md:w-2/3 pt-4 flex'>
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
+                  alt='vilanykely'
                   src='/assets/images/home/vilany kely.png'
                   width={100}
                   height={50}
@@ -268,6 +281,7 @@ const HomePage = () => {
             <div className=' md:w-2/3 pt-4 flex'>
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
+                  alt='vilanykely'
                   src='/assets/images/home/vilany kely.png'
                   width={100}
                   height={50}
@@ -288,7 +302,7 @@ const HomePage = () => {
                 </p>
               </div>
             </div>
-            <div class='flex flex-col  flex-wrap mt-9 lg:py-6 lg:text-left text-center'>
+            <div className='flex flex-col  flex-wrap mt-9 lg:py-6 lg:text-left text-center'>
               <h1
                 style={{ fontFamily: 'cormorsant' }}
                 className='w-auto font-semibold text-2xl leading-none text-gray-800 -ml-12 md:ml-0 sm:text-8x'
@@ -298,6 +312,7 @@ const HomePage = () => {
               <div className=' md:w-2/3 pt-9 flex'>
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                   <Image
+                    alt='vilanykely'
                     src='/assets/images/home/vilany kely.png'
                     width={100}
                     height={50}
@@ -321,6 +336,7 @@ const HomePage = () => {
               <div className=' md:w-2/3 pt-4 flex'>
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                   <Image
+                    alt='vilanykely'
                     src='/assets/images/home/vilany kely.png'
                     width={100}
                     height={50}
@@ -344,6 +360,7 @@ const HomePage = () => {
               <div className=' md:w-2/3 pt-4 flex'>
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                   <Image
+                    alt='vilanykely'
                     src='/assets/images/home/vilany kely.png'
                     width={100}
                     height={50}
@@ -367,6 +384,7 @@ const HomePage = () => {
               <div className=' md:w-2/3 py-4 flex'>
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                   <Image
+                    alt='vilanykely'
                     src='/assets/images/home/vilany kely.png'
                     width={100}
                     height={50}
@@ -388,7 +406,7 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <div class='flex flex-col pt-4 flex-wrap lg:py-6 -mb-10  lg:text-left text-center'>
+              <div className='flex flex-col pt-4 flex-wrap lg:py-6 -mb-10  lg:text-left text-center'>
                 <h1
                   style={{ fontFamily: 'cormorsant' }}
                   className='w-auto font-semibold text-2xl leading-none text-gray-800  font-bebas-neue sm:text-8x'
@@ -398,6 +416,7 @@ const HomePage = () => {
                 <div className=' md:w-2/3 pt-9 flex'>
                   <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                     <Image
+                      alt='vilanykely'
                       src='/assets/images/home/vilany kely.png'
                       width={100}
                       height={50}
@@ -421,6 +440,7 @@ const HomePage = () => {
                 <div className=' md:w-2/3 pt-4 flex'>
                   <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                     <Image
+                      alt='vilanykely'
                       src='/assets/images/home/vilany kely.png'
                       width={100}
                       height={50}
@@ -444,6 +464,7 @@ const HomePage = () => {
                 <div className=' md:w-2/3 pt-4 flex'>
                   <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                     <Image
+                      alt='vilanykely'
                       src='/assets/images/home/vilany kely.png'
                       width={100}
                       height={50}
@@ -470,9 +491,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section class='text-gray-600 bg-slate-900 body-font'>
-        <div class='container  mx-auto'>
-          <div class=' mt-40 px-5 py-10  lg:mb-0 w-full  md:px-32 md:py-10'>
+      <section className='text-gray-600 bg-slate-900 body-font'>
+        <div className='container  mx-auto'>
+          <div className=' mt-40 px-5 py-10  lg:mb-0 w-full  md:px-32 md:py-10'>
             <h3
               style={{ fontFamily: 'Josefin_Sans' }}
               className=' inline-block  px-6 py-1 uppercase text-white text-sm border-orange-300 border-y-2'
@@ -508,29 +529,7 @@ const HomePage = () => {
                     >
                       <path d='M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z'></path>
                     </svg>
-                    <a className='inline-flex mb-6 items-center'>
-                      <Image
-                        alt='testimonial'
-                        src='/assets/images/home/client1.png'
-                        width={100}
-                        height={50}
-                        className='w-12 h-12 rounded-full flex-shrink-0 object-cover object-center'
-                      />
-                      <span className='flex-grow flex flex-col pl-4'>
-                        <span
-                          style={{ fontFamily: 'cormorant' }}
-                          className='title-font font-medium text-white'
-                        >
-                          Holden Caulfield
-                        </span>
-                        <span
-                          style={{ fontFamily: 'Josefin_Sans' }}
-                          className='text-orange-300 text-sm'
-                        >
-                          UI DEVELOPER
-                        </span>
-                      </span>
-                    </a>
+                    <Cardflex />
                     <p
                       style={{ fontFamily: 'cormorant' }}
                       className='leading-relaxed italic text-white border-t-2 py-3 '
@@ -599,9 +598,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section class='text-gray-600 body-font'>
-        <div class='container  px-5  py-24 mx-auto'>
-          <div class='flex flex-col  items-center w-full mb-20'>
+      <section className='text-gray-600 body-font'>
+        <div className='container  px-5  py-24 mx-auto'>
+          <div className='flex flex-col  items-center w-full mb-20'>
             <h3
               style={{ fontFamily: 'Josefin_Sans' }}
               className=' w-24 px-6 py-1  text-sm border-orange-300 border-y-2'
@@ -616,41 +615,41 @@ const HomePage = () => {
             </h1>
             <p
               style={{ fontFamily: 'Josefin_Sans' }}
-              class='lg:w-2/3 mx-auto text-center leading-relaxed text-base'
+              className='lg:w-2/3 mx-auto text-center leading-relaxed text-base'
             >
               Explorez une délicieuse aventure culinaire avec nos plats
               populaires, soigneusement préparés pour éveiller vos papilles et
               satisfaire toutes vos envies gustatives.
             </p>
           </div>
-          <div class='flex justify-center flex-wrap -m-4'>
-            <div class='p-4 lg:w-1/4 md:w-1/2'>
-              <div class='h-full shadow-xl flex flex-col items-center text-center'>
+          <div className='flex justify-center flex-wrap -m-4'>
+            <div className='p-4 lg:w-1/4 md:w-1/2'>
+              <div className='h-full shadow-xl flex flex-col items-center text-center'>
                 <Image
                   src='/assets/images/home/vilanykely.png'
                   width={500}
                   height={50}
                   alt='team'
-                  class='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4'
+                  className='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4'
                 />
-                <div class='w-full'>
+                <div className='w-full'>
                   <div className='flex justify-between px-2 items-center'>
                     <h2
                       style={{ fontFamily: 'cormorant' }}
-                      class='title-font font-medium text-lg text-gray-900'
+                      className='title-font font-medium text-lg text-gray-900'
                     >
                       Vilanay kely
                     </h2>
                     <h3
                       style={{ fontFamily: 'cormorant' }}
-                      class='text-gray-900 font-semibold'
+                      className='text-gray-900 font-semibold'
                     >
                       Ar 20 000
                     </h3>
                   </div>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
-                    class='mb-4 text-left p-2'
+                    className='mb-4 text-left p-2'
                   >
                     DIY tote bag drinking vinegar cronut adaptogen squid fanny
                     pack vaporware.
@@ -658,33 +657,33 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div class='p-4 lg:w-1/4 md:w-1/2'>
-              <div class='h-full shadow-xl flex flex-col items-center text-center'>
+            <div className='p-4 lg:w-1/4 md:w-1/2'>
+              <div className='h-full shadow-xl flex flex-col items-center text-center'>
                 <Image
                   src='/assets/images/home/jus.png'
                   width={500}
                   height={50}
                   alt='team'
-                  class='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4'
+                  className='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4'
                 />
-                <div class='w-full'>
+                <div className='w-full'>
                   <div className='flex justify-between px-2 items-center'>
                     <h2
                       style={{ fontFamily: 'cormorant' }}
-                      class='title-font font-medium text-lg text-gray-900'
+                      className='title-font font-medium text-lg text-gray-900'
                     >
                       Coteils du rova
                     </h2>
                     <h3
                       style={{ fontFamily: 'cormorant' }}
-                      class='text-gray-900 font-semibold'
+                      className='text-gray-900 font-semibold'
                     >
                       Ar 8 000
                     </h3>
                   </div>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
-                    class='mb-4 text-left p-2'
+                    className='mb-4 text-left p-2'
                   >
                     DIY tote bag drinking vinegar cronut adaptogen squid fanny
                     pack vaporware.
@@ -692,33 +691,33 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div class='p-4 lg:w-1/4 md:w-1/2'>
-              <div class='h-full shadow-xl flex flex-col items-center text-center'>
+            <div className='p-4 lg:w-1/4 md:w-1/2'>
+              <div className='h-full shadow-xl flex flex-col items-center text-center'>
                 <Image
                   src='/assets/images/home/henakisoa.png'
                   width={500}
                   height={50}
                   alt='team'
-                  class='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4'
+                  className='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4'
                 />
-                <div class='w-full'>
+                <div className='w-full'>
                   <div className='flex justify-between px-2 items-center'>
                     <h2
                       style={{ fontFamily: 'cormorant' }}
-                      class='title-font font-medium text-lg text-gray-900'
+                      className='title-font font-medium text-lg text-gray-900'
                     >
                       Hena Sôsy
                     </h2>
                     <h3
                       style={{ fontFamily: 'cormorant' }}
-                      class='text-gray-900 font-semibold'
+                      className='text-gray-900 font-semibold'
                     >
                       Ar 20 000
                     </h3>
                   </div>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
-                    class='mb-4 text-left p-2'
+                    className='mb-4 text-left p-2'
                   >
                     DIY tote bag drinking vinegar cronut adaptogen squid fanny
                     pack vaporware.
@@ -726,33 +725,33 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div class='p-4 lg:w-1/4 md:w-1/2'>
-              <div class='h-full shadow-xl flex flex-col items-center text-center'>
+            <div className='p-4 lg:w-1/4 md:w-1/2'>
+              <div className='h-full shadow-xl flex flex-col items-center text-center'>
                 <Image
                   src='/assets/images/home/mosse.png'
                   width={500}
                   height={50}
                   alt='team'
-                  class='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4'
+                  className='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4'
                 />
-                <div class='w-full'>
+                <div className='w-full'>
                   <div className='flex justify-between px-2 items-center'>
                     <h2
                       style={{ fontFamily: 'cormorant' }}
-                      class='title-font font-medium text-lg text-gray-900'
+                      className='title-font font-medium text-lg text-gray-900'
                     >
                       Mousse au fruit
                     </h2>
                     <h3
                       style={{ fontFamily: 'cormorant' }}
-                      class='text-gray-900 font-semibold '
+                      className='text-gray-900 font-semibold '
                     >
                       Ar 20 000
                     </h3>
                   </div>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
-                    class='mb-4 text-left p-2'
+                    className='mb-4 text-left p-2'
                   >
                     DIY tote bag drinking vinegar cronut adaptogen squid fanny
                     pack vaporware.
@@ -762,7 +761,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className='mt-10 flex justify-center'>
-            <button class='inline-flex justify-around items-center border-2 border-orange-300 text-orange-300 py-3 w-52 px-7 focus:outline-none  text-base '>
+            <button className='inline-flex justify-around items-center border-2 border-orange-300 text-orange-300 py-3 w-52 px-7 focus:outline-none  text-base '>
               Voire Menu
               <svg
                 aria-hidden='true'
@@ -791,9 +790,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section class='text-gray-600 bg-slate-900 body-font'>
-        <div class='container px-5 py-24 mx-auto flex items-center md:flex-row flex-col'>
-          <div class=' mb-10 lg:mb-0 rounded-lg overflow-hidden '>
+      <section className='text-gray-600 bg-slate-900 body-font'>
+        <div className='container px-5 py-24 mx-auto flex items-center md:flex-row flex-col'>
+          <div className=' mb-10 lg:mb-0 rounded-lg overflow-hidden '>
             <h3
               style={{ fontFamily: 'Josefin_Sans' }}
               className=' inline-block px-6 py-1 text-white uppercase text-sm border-orange-300 border-y-2'
@@ -818,36 +817,38 @@ const HomePage = () => {
             </div>
             {/* <img alt='feature' class='object-cover object-center h-full w-full' src='https://dummyimage.com/460x500'> */}
           </div>
-          <div class=' flex gap-6 md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4'>
-            <div class='border-8 py-12 border-gray-800 text-center  items-center'>
+          <div className=' flex gap-6 md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4'>
+            <div className='border-8 py-12 border-gray-800 text-center  items-center'>
               <div className='flex  justify-center'>
                 <Image
+                  alt='icon'
                   src='/assets/images/icons/Icon2.png'
                   width={40}
                   height={20}
                 />
               </div>
-              <span class='ml-4 flex px-8 justify-center pt-5 flex-col leading-none'>
+              <span className='ml-4 flex px-8 justify-center pt-5 flex-col leading-none'>
                 <span
                   style={{ fontFamily: 'cormorant' }}
-                  class='title-font text-white font-medium'
+                  className='title-font text-white font-medium'
                 >
                   Opened 10/7
                 </span>
               </span>
             </div>
-            <div class='border-8 py-12 border-gray-800 text-center  items-center'>
+            <div className='border-8 py-12 border-gray-800 text-center  items-center'>
               <div className='flex  justify-center'>
                 <Image
+                  alt='icone'
                   src='/assets/images/icons/Icon.png'
                   width={40}
                   height={20}
                 />
               </div>
-              <span class='ml-4 flex px-8 justify-center pt-5 flex-col leading-none'>
+              <span className='ml-4 flex px-8 justify-center pt-5 flex-col leading-none'>
                 <span
                   style={{ fontFamily: 'cormorant' }}
-                  class='title-font text-white font-medium'
+                  className='title-font text-white font-medium'
                 >
                   Menus Special
                 </span>
@@ -871,12 +872,7 @@ const HomePage = () => {
               <div className=' max-w-xl xl:px-8 xl:w-screen'>
                 <div className='bg-gray-900 bg-opacity-75 rounded  shadow-2xl p-7 sm:p-10'>
                   <div className=' text-center'>
-                    <h3
-                      style={{ fontFamily: 'Josefin_Sans' }}
-                      className=' inline-block px-6 py-1  text-white uppercase text-base font-bold border-orange-300 border-y-2'
-                    >
-                      Reservation
-                    </h3>
+                    <BottonWithBorder title={title} />
                     <h1
                       style={{ fontFamily: 'cormorant' }}
                       className='w-auto font-black text-white py-3 text-xl leading-none   font-bebas-neue'
@@ -935,7 +931,7 @@ const HomePage = () => {
                       />
                     </div>
                     <div className='mt-10  text-center'>
-                      <button class='inline-flex justify-around items-center border-2 border-orange-300 text-orange-300 py-3 w-52 px-7 focus:outline-none  text-base '>
+                      <button className='inline-flex justify-around items-center border-2 border-orange-300 text-orange-300 py-3 w-52 px-7 focus:outline-none  text-base '>
                         Réserver la table
                         <svg
                           aria-hidden='true'
