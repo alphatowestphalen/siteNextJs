@@ -220,13 +220,13 @@ const HomePage: React.FC = () => {
                   style={{ fontFamily: 'cormorant' }}
                   className='text-gray-900 text-lg pl-0 title-font font-medium '
                 >
-                  Salady Malagasy
+                  {`Salady Malagasy`}
                 </h2>
                 <p
                   style={{ fontFamily: 'Josefin_Sans' }}
                   className='leading-relaxed text-base'
                 >
-                  Candied Jerusalem artichokes.
+                  {`Candied Jerusalem artichokes.`}
                 </p>
               </div>
             </div>
@@ -244,13 +244,13 @@ const HomePage: React.FC = () => {
                   style={{ fontFamily: 'cormorant' }}
                   className='text-gray-900 text-lg pl-0 title-font font-medium '
                 >
-                  Assiette du chef
+                  {`Assiette du chef`}
                 </h2>
                 <p
                   style={{ fontFamily: 'Josefin_Sans' }}
                   className='leading-relaxed text-base'
                 >
-                  Candied Jerusalem artichokes.
+                  {`Candied Jerusalem artichokes.`}
                 </p>
               </div>
             </div>
@@ -268,13 +268,13 @@ const HomePage: React.FC = () => {
                   style={{ fontFamily: 'cormorant' }}
                   className='text-gray-900 text-lg pl-0 title-font font-medium '
                 >
-                  Tartare du rova
+                  {`Tartare du rova`}
                 </h2>
                 <p
                   style={{ fontFamily: 'Josefin_Sans' }}
                   className='leading-relaxed text-base'
                 >
-                  Candied Jerusalem artichokes.
+                  {`Candied Jerusalem artichokes.`}
                 </p>
               </div>
             </div>
@@ -292,13 +292,13 @@ const HomePage: React.FC = () => {
                   style={{ fontFamily: 'cormorant' }}
                   className='text-gray-900 text-lg pl-0 title-font font-medium '
                 >
-                  Mille Feuille de légume
+                  {`Mille Feuille de légume`}
                 </h2>
                 <p
                   style={{ fontFamily: 'Josefin_Sans' }}
                   className='leading-relaxed text-base'
                 >
-                  Candied Jerusalem artichokes.
+                  {`Candied Jerusalem artichokes.`}
                 </p>
               </div>
             </div>
@@ -307,7 +307,7 @@ const HomePage: React.FC = () => {
                 style={{ fontFamily: 'cormorsant' }}
                 className='w-auto font-semibold text-2xl leading-none text-gray-800 -ml-12 md:ml-0 sm:text-8x'
               >
-                Plats (20 000Ar)
+                {`Plats (20 000Ar)`}
               </h1>
               <div className=' md:w-2/3 pt-9 flex'>
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
@@ -323,13 +323,13 @@ const HomePage: React.FC = () => {
                     style={{ fontFamily: 'cormorant' }}
                     className='text-gray-900 text-lg pl-0 title-font font-medium '
                   >
-                    Brochette du Rova
+                    {`Brochette du Rova`}
                   </h2>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
                     className='leading-relaxed text-base'
                   >
-                    Candied Jerusalem artichokes.
+                    {`Candied Jerusalem artichokes.`}
                   </p>
                 </div>
               </div>
@@ -347,13 +347,13 @@ const HomePage: React.FC = () => {
                     style={{ fontFamily: 'cormorant' }}
                     className='text-gray-900 text-lg pl-0 title-font font-medium '
                   >
-                    Escalope du Poulet/Zebu
+                    {`Escalope du Poulet/Zebu`}
                   </h2>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
                     className='leading-relaxed text-base'
                   >
-                    Candied Jerusalem artichokes.
+                    {`Candied Jerusalem artichokes.`}
                   </p>
                 </div>
               </div>
@@ -371,13 +371,13 @@ const HomePage: React.FC = () => {
                     style={{ fontFamily: 'cormorant' }}
                     className='text-gray-900 text-lg pl-0 title-font font-medium '
                   >
-                    Ratatouille du Betsileo
+                    {`Ratatouille du Betsileo`}
                   </h2>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
                     className='leading-relaxed text-base'
                   >
-                    Candied Jerusalem artichokes.
+                    {`Candied Jerusalem artichokes.`}
                   </p>
                 </div>
               </div>
@@ -395,13 +395,13 @@ const HomePage: React.FC = () => {
                     style={{ fontFamily: 'cormorant' }}
                     className='text-gray-900 text-lg pl-0 title-font font-medium '
                   >
-                    Vilany kely
+                    {`Vilany kely`}
                   </h2>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
                     className='leading-relaxed text-base'
                   >
-                    Candied Jerusalem artichokes.
+                    {`Candied Jerusalem artichokes.`}
                   </p>
                 </div>
               </div>
@@ -411,7 +411,7 @@ const HomePage: React.FC = () => {
                   style={{ fontFamily: 'cormorsant' }}
                   className='w-auto font-semibold text-2xl leading-none text-gray-800  font-bebas-neue sm:text-8x'
                 >
-                  Desserts (14 000Ar)
+                  {`Desserts (14 000Ar)`}
                 </h1>
                 <div className=' md:w-2/3 pt-9 flex'>
                   <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
@@ -427,13 +427,13 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'cormorant' }}
                       className='text-gray-900 text-lg pl-0 title-font font-medium '
                     >
-                      Brochette de fruit carameliser
+                      {`Brochette de fruit carameliser`}
                     </h2>
                     <p
                       style={{ fontFamily: 'Josefin_Sans' }}
                       className='leading-relaxed text-base'
                     >
-                      Candied Jerusalem artichokes.
+                      {`Candied Jerusalem artichokes.`}
                     </p>
                   </div>
                 </div>
@@ -457,7 +457,7 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'Josefin_Sans' }}
                       className='leading-relaxed text-base'
                     >
-                      Candied Jerusalem artichokes.
+                      {`Candied Jerusalem artichokes.`}
                     </p>
                   </div>
                 </div>
@@ -481,7 +481,7 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'Josefin_Sans' }}
                       className='leading-relaxed text-base'
                     >
-                      Candied Jerusalem artichokes.
+                      {`Candied Jerusalem artichokes.`}
                     </p>
                   </div>
                 </div>
@@ -498,25 +498,25 @@ const HomePage: React.FC = () => {
               style={{ fontFamily: 'Josefin_Sans' }}
               className=' inline-block  px-6 py-1 uppercase text-white text-sm border-orange-300 border-y-2'
             >
-              temoiyage
+              {`temoiyage`}
             </h3>
 
             <h1
               style={{ fontFamily: 'cormorant' }}
               className='w-auto font-black pt-3 text-3xl text-white leading-none  font-bebas-neue'
             >
-              Avis de nos clients
+              {`Avis de nos clients`}
             </h1>
             <p
               style={{ fontFamily: 'Josefin_Sans' }}
               className='py-3 text-white'
             >
-              Nous adorons entendre nos clients, alors n'hésitez pas à laisser
-              un commentaire ou à nous dire bonjour par e-mail.
+              {`Nous adorons entendre nos clients, alors n'hésitez pas à laisser
+              un commentaire ou à nous dire bonjour par e-mail.`}
             </p>
             <div className='container mx-auto'>
               <h1 className='text-3xl font-medium title-font text-gray-900 text-center'>
-                Testimonials
+                {`Testimonials`}
               </h1>
               <div className='flex flex-wrap -m-4'>
                 <div className='p-4 md:w-1/2 w-full'>
@@ -534,10 +534,10 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'cormorant' }}
                       className='leading-relaxed italic text-white border-t-2 py-3 '
                     >
-                      Synth chartreuse iPhone lomo cray raw denim brunch
+                      {`Synth chartreuse iPhone lomo cray raw denim brunch
                       everyday carry neutra before they sold out fixie 90's
                       microdosing. Tacos pinterest fanny pack venmo, post-ironic
-                      heirloom try-hard pabst authentic iceland.
+                      heirloom try-hard pabst authentic iceland.`}
                     </p>
                   </div>
                 </div>
@@ -564,13 +564,13 @@ const HomePage: React.FC = () => {
                           style={{ fontFamily: 'cormorant' }}
                           className='title-font font-medium text-white'
                         >
-                          Holden Caulfield
+                          {`Holden Caulfield`}
                         </span>
                         <span
                           style={{ fontFamily: 'Josefin_Sans' }}
                           className='text-orange-300 text-sm'
                         >
-                          UI DEVELOPER
+                          {`UI DEVELOPER`}
                         </span>
                       </span>
                     </a>
@@ -578,10 +578,10 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'cormorant' }}
                       className='leading-relaxed italic text-white border-t-2 py-3 '
                     >
-                      Synth chartreuse iPhone lomo cray raw denim brunch
+                      {`Synth chartreuse iPhone lomo cray raw denim brunch
                       everyday carry neutra before they sold out fixie 90's
                       microdosing. Tacos pinterest fanny pack venmo, post-ironic
-                      heirloom try-hard pabst authentic iceland.
+                      heirloom try-hard pabst authentic iceland.`}
                     </p>
                   </div>
                 </div>
@@ -605,21 +605,21 @@ const HomePage: React.FC = () => {
               style={{ fontFamily: 'Josefin_Sans' }}
               className=' w-24 px-6 py-1  text-sm border-orange-300 border-y-2'
             >
-              MENU
+              {`MENU`}
             </h3>
             <h1
               style={{ fontFamily: 'cormorant' }}
               className='w-auto font-semibold py-3 text-3xl leading-none  font-bebas-neue'
             >
-              Plats populaires
+              {`Plats populaires`}
             </h1>
             <p
               style={{ fontFamily: 'Josefin_Sans' }}
               className='lg:w-2/3 mx-auto text-center leading-relaxed text-base'
             >
-              Explorez une délicieuse aventure culinaire avec nos plats
+              {`Explorez une délicieuse aventure culinaire avec nos plats
               populaires, soigneusement préparés pour éveiller vos papilles et
-              satisfaire toutes vos envies gustatives.
+              satisfaire toutes vos envies gustatives.`}
             </p>
           </div>
           <div className='flex justify-center flex-wrap -m-4'>
@@ -638,21 +638,21 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'cormorant' }}
                       className='title-font font-medium text-lg text-gray-900'
                     >
-                      Vilanay kely
+                      {`Vilanay kely`}
                     </h2>
                     <h3
                       style={{ fontFamily: 'cormorant' }}
                       className='text-gray-900 font-semibold'
                     >
-                      Ar 20 000
+                      {`Ar 20 000`}
                     </h3>
                   </div>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
                     className='mb-4 text-left p-2'
                   >
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    {`DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                    pack vaporware.`}
                   </p>
                 </div>
               </div>
@@ -672,21 +672,21 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'cormorant' }}
                       className='title-font font-medium text-lg text-gray-900'
                     >
-                      Coteils du rova
+                      {`Coteils du rova`}
                     </h2>
                     <h3
                       style={{ fontFamily: 'cormorant' }}
                       className='text-gray-900 font-semibold'
                     >
-                      Ar 8 000
+                      {`Ar 8 000`}
                     </h3>
                   </div>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
                     className='mb-4 text-left p-2'
                   >
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    {`DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                    pack vaporware.`}
                   </p>
                 </div>
               </div>
@@ -706,21 +706,21 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'cormorant' }}
                       className='title-font font-medium text-lg text-gray-900'
                     >
-                      Hena Sôsy
+                      {`Hena Sôsy`}
                     </h2>
                     <h3
                       style={{ fontFamily: 'cormorant' }}
                       className='text-gray-900 font-semibold'
                     >
-                      Ar 20 000
+                      {`Ar 20 000`}
                     </h3>
                   </div>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
                     className='mb-4 text-left p-2'
                   >
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    {`DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                    pack vaporware.`}
                   </p>
                 </div>
               </div>
@@ -740,21 +740,21 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'cormorant' }}
                       className='title-font font-medium text-lg text-gray-900'
                     >
-                      Mousse au fruit
+                      {`Mousse au fruit`}
                     </h2>
                     <h3
                       style={{ fontFamily: 'cormorant' }}
                       className='text-gray-900 font-semibold '
                     >
-                      Ar 20 000
+                      {`Ar 20 000`}
                     </h3>
                   </div>
                   <p
                     style={{ fontFamily: 'Josefin_Sans' }}
                     className='mb-4 text-left p-2'
                   >
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    {`DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                    pack vaporware.`}
                   </p>
                 </div>
               </div>
@@ -762,7 +762,7 @@ const HomePage: React.FC = () => {
           </div>
           <div className='mt-10 flex justify-center'>
             <button className='inline-flex justify-around items-center border-2 border-orange-300 text-orange-300 py-3 w-52 px-7 focus:outline-none  text-base '>
-              Voire Menu
+              {`Voire Menu`}
               <svg
                 aria-hidden='true'
                 xmlns='http://www.w3.org/2000/svg'
@@ -797,22 +797,22 @@ const HomePage: React.FC = () => {
               style={{ fontFamily: 'Josefin_Sans' }}
               className=' inline-block px-6 py-1 text-white uppercase text-sm border-orange-300 border-y-2'
             >
-              Ce que nous offrons.
+              {`Ce que nous offrons.`}
             </h3>
             <h1
               style={{ fontFamily: 'cormorant' }}
               className='w-auto font-black text-white pt-3 text-3xl leading-none   font-bebas-neue'
             >
-              Nos excellents services
+              {`Nos excellents services`}
             </h1>
             <div className='w-96'>
               <p
                 style={{ fontFamily: 'Josefin_Sans' }}
                 className='py-3 text-white'
               >
-                Découvrez l'excellence avec nos services exceptionnels qui
+                {`Découvrez l'excellence avec nos services exceptionnels qui
                 répondent à vos besoins de manière exceptionnelle. Nous nous
-                engageons à vous offrir une expérience client inégalée.
+                engageons à vous offrir une expérience client inégalée.`}
               </p>
             </div>
             {/* <img alt='feature' class='object-cover object-center h-full w-full' src='https://dummyimage.com/460x500'> */}
@@ -832,7 +832,7 @@ const HomePage: React.FC = () => {
                   style={{ fontFamily: 'cormorant' }}
                   className='title-font text-white font-medium'
                 >
-                  Opened 10/7
+                  {`Opened 10/7`}
                 </span>
               </span>
             </div>
@@ -850,7 +850,7 @@ const HomePage: React.FC = () => {
                   style={{ fontFamily: 'cormorant' }}
                   className='title-font text-white font-medium'
                 >
-                  Menus Special
+                  {`Menus Special`}
                 </span>
               </span>
             </div>
@@ -877,7 +877,7 @@ const HomePage: React.FC = () => {
                       style={{ fontFamily: 'cormorant' }}
                       className='w-auto font-black text-white py-3 text-xl leading-none   font-bebas-neue'
                     >
-                      Réservez votre table dès maintenant
+                      {`Réservez votre table dès maintenant`}
                     </h1>
                   </div>
                   <form className='pt-5'>
@@ -932,7 +932,7 @@ const HomePage: React.FC = () => {
                     </div>
                     <div className='mt-10  text-center'>
                       <button className='inline-flex justify-around items-center border-2 border-orange-300 text-orange-300 py-3 w-52 px-7 focus:outline-none  text-base '>
-                        Réserver la table
+                        {`Réserver la table`}
                         <svg
                           aria-hidden='true'
                           xmlns='http://www.w3.org/2000/svg'

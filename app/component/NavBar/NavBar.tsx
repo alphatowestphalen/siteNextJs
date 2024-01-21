@@ -14,43 +14,43 @@ const NavBar = () => {
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     href='/#'
                   >
-                    Accueil
+                    {`Accueil`}
                   </a>
                   <a
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     href='/#'
                   >
-                    A propos
+                    {`A propos`}
                   </a>
                   <a
                     className='text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     href='/#'
                   >
-                    Menu
+                    {`Menu`}
                   </a>
                   <a
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     href='/#'
                   >
-                    Reservation
+                    {`Reservation`}
                   </a>
                   <a
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     href='/#'
                   >
-                    Galerie
+                    {`Galerie`}
                   </a>
                   <a
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     href='/#'
                   >
-                    Blog
+                    {`Blog`}
                   </a>
                   <a
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     href='/#'
                   >
-                    Contact
+                    {`Contact`}
                   </a>
                 </div>
               </div>
@@ -102,43 +102,43 @@ const NavBar = () => {
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               href='/#'
             >
-              Accueil
+              {`Accueil`}
             </a>
             <a
               className='text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium'
               href='/#'
             >
-              A propos
+              {`A propos`}
             </a>
             <a
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               href='/#'
             >
-              Menu
+              {`Menu`}
             </a>
             <a
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               href='/#'
             >
-              Reservation
+              {`Reservation`}
             </a>
             <a
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               href='/#'
             >
-              Galerie
+              {`Galerie`}
             </a>
             <a
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               href='/#'
             >
-              Blog
+              {`Blog`}
             </a>
             <a
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
               href='/#'
             >
-              Contact
+              {`Contact`}
             </a>
           </div>
         </div>
