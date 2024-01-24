@@ -33,6 +33,7 @@ const Menupage = () => {
                 src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
+                className="rounded-full"
               />
             </div>
             <div className="flex-grow text-left pl-3">
@@ -57,6 +58,7 @@ const Menupage = () => {
                 src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
+                className="rounded-full"
               />
             </div>
             <div className="flex-grow text-left pl-3">
@@ -81,6 +83,8 @@ const Menupage = () => {
                 src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
+                className="rounded-full"
+
               />
             </div>
             <div className="flex-grow text-left pl-3">
@@ -105,6 +109,8 @@ const Menupage = () => {
                 src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
+                className="rounded-full"
+
               />
             </div>
             <div className="flex-grow text-left pl-3">
@@ -151,6 +157,8 @@ const Menupage = () => {
                 src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
+                className="rounded-full"
+
               />
             </div>
             <div className="flex-grow text-left pl-3">
@@ -175,6 +183,8 @@ const Menupage = () => {
                 src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
+                className="rounded-full"
+
               />
             </div>
             <div className="flex-grow text-left pl-3">
@@ -199,6 +209,8 @@ const Menupage = () => {
                 src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
+                className="rounded-full"
+
               />
             </div>
             <div className="flex-grow text-left pl-3">
@@ -223,6 +235,8 @@ const Menupage = () => {
                 src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
+                className="rounded-full"
+
               />
             </div>
             <div className="flex-grow text-left pl-3">
