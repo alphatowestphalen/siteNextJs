@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import BottonWithBorder from "../component/Botton/BottonWithBorder/BottonWithBorder";
 import Image from "next/image";
 
-const page = () => {
-  const [title, setTitle] = useState<string>("Menu");
+const Menupage = () => {
+  // const [title, setTitle] = useState<string>("Menu");
   return (
     <>
       <div className="bg-gray-900 flex justify-center py-8 md:text-xl">
-        <BottonWithBorder title={title} />
+        {/* <BottonWithBorder title={title} /> */}
       </div>
       <section className="text-gray-600 py-5 md:py-24 px-5 md:gap-40 flex flex-wrap  justify-center body-font">
         <Image
@@ -378,4 +378,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Menupage;
