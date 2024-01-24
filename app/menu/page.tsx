@@ -30,7 +30,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -54,7 +54,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -78,7 +78,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -102,7 +102,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -148,7 +148,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -172,7 +172,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -196,7 +196,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -220,7 +220,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -280,7 +280,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -304,7 +304,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -328,7 +328,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
@@ -352,7 +352,7 @@ const Menupage = () => {
             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-6 flex-shrink-0">
               <Image
                 alt="vilanykely"
-                src="/assets/images/home/vilany kely.png"
+                src="/assets/images/home/vilanykely.png"
                 width={100}
                 height={50}
               />
