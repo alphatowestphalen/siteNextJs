@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const NavBar = () => {
   return (
@@ -12,43 +11,43 @@ const NavBar = () => {
               <div className='hidden md:block'>
                 <div className='flex items-baseline ml-20 space-x-4'>
                   
-                  <Link href='/'
+                  <a href='/'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     
                   >
                     {`Accueil`}
-                  </Link>
-                  <Link href='/about'
+                  </a>
+                  <a href='/about'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     
                   >
                     {`A propos`}
-                  </Link>
-                  <Link href='/menu'
+                  </a>
+                  <a href='/menu'
                     className='text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Menu`}
-                  </Link>
-                  <Link href='/'
+                  </a>
+                  <a href='/'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Reservation`}
-                  </Link>
-                  <Link href='/galery'
+                  </a>
+                  <a href='/galery'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Galerie`}
-                  </Link>
-                  <Link href='/'
+                  </a>
+                  <a href='/'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Blog`}
-                  </Link>
-                  <Link href='/'
+                  </a>
+                  <a href='/'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Contact`}
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -95,41 +94,41 @@ const NavBar = () => {
         </div>
         <div className='md:hidden'>
           <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-            <Link href='/'
+            <a href='/'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Accueil`}
-            </Link>
-            <Link href='/about'
+            </a>
+            <a href='/about'
               className='text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`A propos`}
-            </Link>
-            <Link href='/menu'
+            </a>
+            <a href='/menu'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Menu`}
-            </Link>
-            <Link href='/'
+            </a>
+            <a href='/'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Reservation`}
-            </Link>
-            <Link href='/'
+            </a>
+            <a href='/'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Galerie`}
-            </Link>
-            <Link href='/'
+            </a>
+            <a href='/'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Blog`}
-            </Link>
-            <Link href='/'
+            </a>
+            <a href='/'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Contact`}
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
