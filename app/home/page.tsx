@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
               alt='image'
               width={600}
               height={400}
-              src='/assets/home/image.png'
+              src='/assets/images/home/acceuil.png'
               className=' max-w-xs w-96 m-auto md:max-w-sm'
             />
           </div>
@@ -136,7 +136,7 @@ const HomePage: React.FC = () => {
                 height={100}
                 alt='ecommerce'
                 className='lg:w-1/2 object-cover rounded-lg'
-                src='/assets/home/histoire.png'
+                src='/assets/images/home/histoire.png'
               />
               <div className='lg:w-1/2 w-full lg:pl-10 lg:py-6 lg:mt-0'>
                 <h1
@@ -211,9 +211,10 @@ const HomePage: React.FC = () => {
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
                   alt='vilanykely'
-                  src='/assets/images/home/vilany kely.png'
+                  src='/assets/images/home/vilanykely.png'
                   width={100}
                   height={50}
+                  className='rounded-full' 
                 />
               </div>
               <div className='flex-grow text-left pl-3'>
@@ -235,9 +236,10 @@ const HomePage: React.FC = () => {
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
                   alt='vilanykely'
-                  src='/assets/images/home/vilany kely.png'
+                  src='/assets/images/home/vilanykely.png'
                   width={100}
                   height={50}
+                  className='rounded-full'
                 />
               </div>
               <div className='flex-grow text-left pl-3'>
@@ -259,9 +261,10 @@ const HomePage: React.FC = () => {
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
                   alt='vilanykely'
-                  src='/assets/images/home/vilany kely.png'
+                  src='/assets/images/home/vilanykely.png'
                   width={100}
                   height={50}
+                  className='rounded-full'
                 />
               </div>
               <div className='flex-grow text-left pl-3'>
@@ -283,9 +286,10 @@ const HomePage: React.FC = () => {
               <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                 <Image
                   alt='vilanykely'
-                  src='/assets/images/home/vilany kely.png'
+                  src='/assets/images/home/vilanykely.png'
                   width={100}
                   height={50}
+                  className='rounded-full'
                 />
               </div>
               <div className='flex-grow text-left pl-3'>
@@ -314,9 +318,10 @@ const HomePage: React.FC = () => {
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                   <Image
                     alt='vilanykely'
-                    src='/assets/images/home/vilany kely.png'
+                    src='/assets/images/home/vilanykely.png'
                     width={100}
                     height={50}
+                    className='rounded-full'
                   />
                 </div>
                 <div className='flex-grow text-left pl-3'>
@@ -338,9 +343,10 @@ const HomePage: React.FC = () => {
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                   <Image
                     alt='vilanykely'
-                    src='/assets/images/home/vilany kely.png'
+                    src='/assets/images/home/vilanykely.png'
                     width={100}
                     height={50}
+                    className='rounded-full'
                   />
                 </div>
                 <div className='flex-grow text-left pl-3'>
@@ -362,9 +368,10 @@ const HomePage: React.FC = () => {
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                   <Image
                     alt='vilanykely'
-                    src='/assets/images/home/vilany kely.png'
+                    src='/assets/images/home/vilanykely.png'
                     width={100}
                     height={50}
+                    className='rounded-full'
                   />
                 </div>
                 <div className='flex-grow text-left pl-3'>
@@ -386,9 +393,10 @@ const HomePage: React.FC = () => {
                 <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                   <Image
                     alt='vilanykely'
-                    src='/assets/images/home/vilany kely.png'
+                    src='/assets/images/home/vilanykely.png'
                     width={100}
                     height={50}
+                    className='rounded-full'
                   />
                 </div>
                 <div className='flex-grow text-left pl-3'>
@@ -418,9 +426,10 @@ const HomePage: React.FC = () => {
                   <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                     <Image
                       alt='vilanykely'
-                      src='/assets/images/home/vilany kely.png'
+                      src='/assets/images/home/vilanykely.png'
                       width={100}
                       height={50}
+                      className='rounded-full'
                     />
                   </div>
                   <div className='flex-grow text-left pl-3'>
@@ -442,9 +451,10 @@ const HomePage: React.FC = () => {
                   <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                     <Image
                       alt='vilanykely'
-                      src='/assets/images/home/vilany kely.png'
+                      src='/assets/images/home/vilanykely.png'
                       width={100}
                       height={50}
+                      className='rounded-full'
                     />
                   </div>
                   <div className='flex-grow text-left pl-3'>
@@ -466,9 +476,10 @@ const HomePage: React.FC = () => {
                   <div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0'>
                     <Image
                       alt='vilanykely'
-                      src='/assets/images/home/vilany kely.png'
+                      src='/assets/images/home/vilanykely.png'
                       width={100}
                       height={50}
+                      className='rounded-full'
                     />
                   </div>
                   <div className='flex-grow text-left pl-3'>
