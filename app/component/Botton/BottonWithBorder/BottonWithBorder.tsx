@@ -7,7 +7,7 @@ const BottonWithBorder: React.FC<BottonInterface> = ({ title }) => {
     <div>
       <h3
         style={{ fontFamily: "Josefin_Sans" }}
-        className=" inline-block px-6 py-1  text-white uppercase text-base font-bold border-orange-300 border-y-2"
+        className=" inline-block px-6 py-1  text-white text-base md:text-2xl font-bold border-orange-300 border-y-2"
       >
         {title}
       </h3>

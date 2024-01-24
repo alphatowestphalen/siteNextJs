@@ -6,7 +6,7 @@ import Cardflex from '../component/Card/Cardflex';
 import BottonWithBorder from '../component/Botton/BottonWithBorder/BottonWithBorder';
 
 const HomePage: React.FC = () => {
-  const [title,setTitle] = useState<string>('Reservation')
+  const [title,setTitle] = useState<string>('RESERVATION')
   const [menu,setMenu] = useState<string>('menu')
   return (
     <>
@@ -128,7 +128,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
-        <section className='text-gray-600 text-bol body-font overflow-hidden'>
+        <section className='text-gray-700 text-bol body-font overflow-hidden'>
           <div className='container  px-5 py-5 mb-16 mx-auto '>
             <div className='lg:w-4/5 mx-auto flex flex-wrap'>
               <Image
@@ -163,6 +163,7 @@ const HomePage: React.FC = () => {
                   continue d'être un lieu où la culture et la cuisine se
                   rencontrent, créant une aventure gustative captivante.`}
                 </p>
+                <p className='mt-6'> {`RAMAMPY Vicky Annah`}</p>
               </div>
             </div>
           </div>
@@ -792,7 +793,7 @@ const HomePage: React.FC = () => {
 
       <section className='text-gray-600 bg-slate-900 body-font'>
         <div className='container px-5 py-24 mx-auto flex items-center md:flex-row flex-col'>
-          <div className=' mb-10 lg:mb-0 rounded-lg overflow-hidden '>
+          <div className=' mb-10 lg:mb-0 px-9  rounded-lg overflow-hidden '>
             <h3
               style={{ fontFamily: 'Josefin_Sans' }}
               className=' inline-block px-6 py-1 text-white uppercase text-sm border-orange-300 border-y-2'
