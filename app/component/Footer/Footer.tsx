@@ -19,9 +19,7 @@ const Footer = () => {
                 >
                   {`IR 19, Ville Haute Fianarantsoa`} <br />
                   <span className="text-orange-300"> Appel </span>
-                  <a href="tel:+261 72 545 75">
-                    +261 72 545 75
-                  </a>
+                  <a href="tel:+261 72 545 75">+261 72 545 75</a>
                   <br />
                   <span className="text-orange-300">
                     <a href="mailto:latabledurova@gmail.com">
@@ -79,6 +77,25 @@ const Footer = () => {
                 </p>
               </li>
             </nav>
+          </div>
+          <div className="bg-slate-400 rounded-full absolute right-9  p-3">
+            <a href="#header" className="transition">
+              <svg
+                className="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m5 15 7-7 7 7"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

@@ -70,7 +70,7 @@ const Contactpage = () => {
                     type="Telephone"
                     id="footer-field"
                     name="footer-field"
-                    placeholder="+261 34 00 000 00 "
+                    placeholder="N° Telephone"
                     className="w-full md:w-48 bg-transparent border text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
                   />
                   <input
