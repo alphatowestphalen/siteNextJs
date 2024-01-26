@@ -28,7 +28,7 @@ const NavBar = () => {
                   >
                     {`Menu`}
                   </a>
-                  <a href='/'
+                  <a href='/reservation'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Reservation`}
@@ -109,7 +109,7 @@ const NavBar = () => {
             >
               {`Menu`}
             </a>
-            <a href='/'
+            <a href='/reservation'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Reservation`}

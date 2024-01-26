@@ -299,7 +299,7 @@ const GaleryPage = () => {
           src="/assets/images/galerie/Image(10).png"
           alt="Person"
         />
-        <div className="absolute top-12 left-6 md:top-4 md:left-16 ">
+        <div className="absolute top-12 left-8 md:top-4 md:left-20 ">
           <h3
             style={{ fontFamily: "Josefin_Sans" }}
             className=" inline-block px-6 py-1  text-sm md:text-lg border-orange-300 border-y-2"
