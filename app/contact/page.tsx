@@ -26,11 +26,11 @@ const Contactpage = () => {
               </div>
               <div className="flex items-center py-4 gap-3">
                 <img className="w-9 p-1 rounded-full bg-slate-900" src="/assets/images/icons/Vector.png" alt="" />
-                <span>{`latabledurova@gmail.com`}</span>
+                <a href="mailto:latabledurova@gmail.com">{`latabledurova@gmail.com`}</a>
               </div>
               <div className="flex items-center gap-3">
                 <img className="w-9 p-1 rounded-full bg-slate-900" src="/assets/images/icons/Call.png" alt="" />
-                <span>{`+261 72 545 75`}</span>
+                <a href="tel:+261 72 545 75">{`+261 72 545 75`}</a>
               </div>
             </div>
           </div>

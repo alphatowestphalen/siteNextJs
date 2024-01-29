@@ -1,79 +1,50 @@
 import React from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 const NavBar = () => {
   return (
     <div>
       <nav className='bg-gray-900 w-screen border-y-2 border-white'>
         <div className='px-8 mx-auto max-w-7xl'>
-          <div className='flex items-center justify-between h-16'>
+          <div className='flex items-center justify-center h-16'>
             <div className=' flex items-center justify-center'>
               <div className='hidden md:block'>
                 <div className='flex items-baseline ml-20 space-x-4'>
                   
-                  <a href='/'
+                  <Link href='/'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     
                   >
                     {`Accueil`}
-                  </a>
-                  <a href='/about'
+                  </Link>
+                  <Link href='/about'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                     
                   >
                     {`A propos`}
-                  </a>
-                  <a href='/menu'
+                  </Link>
+                  <Link href='/menu'
                     className='text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Menu`}
-                  </a>
-                  <a href='/reservation'
+                  </Link>
+                  <Link href='/reservation'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Reservation`}
-                  </a>
-                  <a href='/galery'
+                  </Link>
+                  <Link href='/galery'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Galerie`}
-                  </a>
-                  <a href='/'
-                    className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                  >
-                    {`Blog`}
-                  </a>
-                  <a href='/contact'
+                  </Link>
+                  
+                  <Link href='/contact'
                     className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                   >
                     {`Contact`}
-                  </a>
+                  </Link>
                 </div>
-              </div>
-            </div>
-            <div className='hidden md:block '>
-              <div className='flex justify-around w-24 items-center ml-4 md:ml-6'>
-                {/* <div className='flex items-center justify-center'> */}
-                <Image
-                  alt='fb'
-                  src='/assets/images/icons/fb.png'
-                  width={24}
-                  height={20}
-                />
-
-                <Image
-                  alt='insta'
-                  src='/assets/images/icons/Insta.png'
-                  width={24}
-                  height={20}
-                />
-                
-                {/* <Image
-                  src='/assets/images/icons/Cart.png'
-                  width={20}
-                  height={20}
-                /> */}
-                {/* </div> */}
               </div>
             </div>
             <div className='flex -mr-2 md:hidden'>
@@ -94,41 +65,37 @@ const NavBar = () => {
         </div>
         <div className='md:hidden'>
           <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-            <a href='/'
+            <Link href='/'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Accueil`}
-            </a>
-            <a href='/about'
+            </Link>
+            <Link href='/about'
               className='text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`A propos`}
-            </a>
-            <a href='/menu'
+            </Link>
+            <Link href='/menu'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Menu`}
-            </a>
-            <a href='/reservation'
+            </Link>
+            <Link href='/reservation'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Reservation`}
-            </a>
-            <a href='/galery'
+            </Link>
+            <Link href='/galery'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Galerie`}
-            </a>
-            <a href='/'
-              className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-            >
-              {`Blog`}
-            </a>
-            <a href='/contact'
+            </Link>
+            
+            <Link href='/contact'
               className='text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium'
             >
               {`Contact`}
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
