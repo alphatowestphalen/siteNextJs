@@ -4,7 +4,7 @@ const Contactpage = () => {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container  mx-auto flex px-5 py-24  md:flex-row flex-col justify-around items-center">
+        <div className="container  mx-auto flex px-5 md:py-24 py-5  md:flex-row flex-col justify-around items-center">
           <div className="lg:flex-grow md:w-1/6   md:pr-16 inline-block flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1
               style={{ fontFamily: "cormorant" }}
@@ -15,7 +15,7 @@ const Contactpage = () => {
             </h1>
             <p
               style={{ fontFamily: "Josefin_Sans" }}
-              className="pb-5 w-1/2 text-md pr-5"
+              className="pb-5 md:w-1/2 text-md pr-5"
             >
               {`Amener la table à la victoire, mettre en place des stratégies de survie gagnant-gagnant, assurer une domination proactive jusqu'à la fin de la journée, en exploitant les moments réels à travers des points de contact multiples.`}
             </p>
@@ -51,36 +51,36 @@ const Contactpage = () => {
                   
                 </h1>
                 
-                <div className="grid pb-8 md:grid-cols-2 gap-5">
+                <div className="md:grid pb-8 md:grid-cols-2 w-96 md:gap-5">
                   <input
                     type="text"
                     id="footer-field"
                     name="footer-field"
                     placeholder="Nom"
-                    className="w-full md:w-48  border  text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    className=" w-72 md:w-48  border mb-5 md:mb-0 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
                   />
                   <input
                     type="email"
                     id="footer-field"
                     name="footer-field"
                     placeholder="test@example.com"
-                    className="w-full md:w-48 bg-transparent border text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-72 md:w-48 bg-transparent border mb-5 md:mb-0 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
                   />
                   <input
                     type="Telephone"
                     id="footer-field"
                     name="footer-field"
                     placeholder="N° Telephone"
-                    className="w-full md:w-48 bg-transparent border text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-72 md:w-48 bg-transparent border text-gray-600 mb-5 md:mb-0 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
                   />
                   <input
                     type="text"
                     id="footer-field"
                     name="footer-field"
                     placeholder="Subject"
-                    className="w-full md:w-48 bg-transparent border text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-72 mb-5 md:mb-0 md:w-48 bg-transparent border text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
                   />
-                  <textarea className="col-span-2 border-gray-600 p-3  border" name="" id="" cols={60} rows={5} placeholder="Message">
+                  <textarea className="col-span-2 w-72 md:w-full mb-5 md:mb-0 border-gray-600 p-3  border" name="" id="" cols={60} rows={5} placeholder="Message">
                     
                   </textarea>
                 </div>

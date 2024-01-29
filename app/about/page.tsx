@@ -543,7 +543,7 @@ const AboutPage: React.FC = () => {
                         placeholder="Prenom"
                         required
                         type="text"
-                        className="flex-grow  h-11 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        className="flex-grow w-full h-11 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                         id="firstName"
                         name="firstName"
                       />
@@ -552,7 +552,7 @@ const AboutPage: React.FC = () => {
                         placeholder="Heurs"
                         required
                         type="time"
-                        className="flex-grow  h-11 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        className="flex-grow w-full h-11 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                         id="firstName"
                         name="firstName"
                       />
@@ -561,7 +561,7 @@ const AboutPage: React.FC = () => {
                         placeholder="Date"
                         required
                         type="date"
-                        className="flex-grow text-gray-800 h-11 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        className="flex-grow w-full text-gray-800 h-11 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                         id="firstName"
                         name="firstName"
                       />
