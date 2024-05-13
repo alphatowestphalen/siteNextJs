@@ -1,9 +1,47 @@
 "use client";
 import React, { useState } from "react";
 import BottonWithBorder from "../component/Botton/BottonWithBorder/BottonWithBorder";
-
+import { SendEmail } from "../email/SendEmail";
 const PageReservation = () => {
   const [reservation, setResrvations] = useState<string>("Reservation");
+  const [emailSent, setEmailSent] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmial] = useState("");
+  const [number, setNumber] = useState("");
+  const [dateReservation, setDateReservation] = useState("");
+  const [hourse, setHourse] = useState(""); 
+  const [message, setMessage] = useState("");
+
+  const handleSendEmail = async () => {
+    const serviceID = "service_latable";
+    const templateID = "template_latable";
+    const userID = "lZy9CmEIkA-0-ygMh";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      name: name,
+      email: email,
+      number: number,
+      dateReservation: dateReservation,
+      hours: hourse,      
+      message: message,
+    };
+
+    try {
+      await SendEmail(serviceID, templateID, userID, templateParams);
+      setEmailSent(true);
+    } catch (error) {
+      // Gérer les erreurs d'envoi d'e-mail
+      console.error("Error sending email:", error);
+    }
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    handleSendEmail();
+  };
+
   return (
     <>
       <div className="bg-gray-900 flex justify-center py-8 md:text-xl">
@@ -20,72 +58,86 @@ const PageReservation = () => {
               >
                 {`Reseravtion`}
               </h3>
-              <div className="w-96">
-                <h1
-                  style={{ fontFamily: "cormorant" }}
-                  className="md:w-[500px]  font-black py-3  text-xl md:text-xl leading-snug  font-bebas-neue"
-                >
-                  {`Réservéz votre table `}
-                  {`dès maintenant`}
-                </h1>
-                <p
-                  style={{ fontFamily: "Josefin_Sans" }}
-                  className="pb-5 w-full text-md pr-5"
-                >
-                  {`Les gens, la cuisine et les emplacements de choix font de Rodich l'endroit parfait pour que de bons amis et la famille se réunissent et passent un bon moment.`}
-                </p>
-                <div className="grid pb-8 md:grid-cols-2 gap-5">
-                  <input
-                    type="text"
-                    id="footer-field"
-                    name="footer-field"
-                    placeholder="Nom"
-                    className="w-full md:w-48  border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                  <input
-                    type="email"
-                    id="footer-field"
-                    name="footer-field"
-                    placeholder="test@example.com"
-                    className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                  <input
-                    type="Telephone"
-                    id="footer-field"
-                    name="footer-field"
-                    placeholder="+261 34 00 000 00 "
-                    className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                  <input
-                    type="date"
-                    id="footer-field"
-                    name="footer-field"
-                    placeholder="11/11/2024"
-                    className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                  <input
-                    type="time"
-                    id="footer-field"
-                    name="footer-field"
-                    placeholder="12:00"
-                    className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                  <input
-                    type="Prenom"
-                    id="footer-field"
-                    name="footer-field"
-                    placeholder="RAKOTO"
-                    className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                  />
+              <form onSubmit={handleSubmit}>
+                <div className="w-96">
+                  <h1
+                    style={{ fontFamily: "cormorant" }}
+                    className="md:w-[500px]  font-black py-3  text-xl md:text-xl leading-snug  font-bebas-neue"
+                  >
+                    {`Réservéz votre table `}
+                    {`dès maintenant`}
+                  </h1>
+                  <p
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="pb-5 w-full text-md pr-5"
+                  >
+                    {`Les gens, la cuisine et les emplacements de choix font de Rodich l'endroit parfait pour que de bons amis et la famille se réunissent et passent un bon moment.`}
+                  </p>
+                  <div className="grid pb-8 md:grid-cols-2 gap-5">
+                    <input
+                      type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      id="footer-field"
+                      name="name"
+                      placeholder="Nom"
+                      className="w-full md:w-48  border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmial(e.target.value)}
+                      id="footer-field"
+                      name="email"
+                      placeholder="test@example.com"
+                      className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                    <input
+                      type="Telephone"
+                      value={number}
+                      onChange={(e) => setNumber(e.target.value)}
+                      id="footer-field"
+                      name="number"
+                      placeholder="+261 34 00 000 00 "
+                      className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                    <input
+                      type="date"
+                      value={dateReservation}
+                      onChange={(e) => setDateReservation(e.target.value)}
+                      id="footer-field"
+                      name="dateReservation"
+                      placeholder="11/11/2024"
+                      className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                    <input
+                      type="time"
+                      value={hourse}
+                      onChange={(e) => setHourse(e.target.value)}
+                      id="footer-field"
+                      name="hourse"
+                      placeholder="12:00"
+                      className="w-full md:w-[397px] bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <textarea
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="w-full mb-6  md:w-[397px] bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1   leading-8 transition-colors duration-200 ease-in-out"
+                    name="message"
+                    id=""
+                  >
+                    {`Message`}
+                  </textarea>
+                  <button
+                    type="submit"
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="w-full md:w-[218px] px-8 py-3   bg-transparent border border-orange-300 text-orange-300 text-md"
+                  >
+                    {`Reserver une Table`}
+                  </button>
                 </div>
-                <a
-                  style={{ fontFamily: "Josefin_Sans" }}
-                  href="#"
-                  className="px-8 py-3   bg-transparent border border-orange-300 text-orange-300 text-md"
-                >
-                  {`Reserver une Table`}
-                </a>
-              </div>
+              </form>
             </div>
             <img
               alt="ecommerce"
