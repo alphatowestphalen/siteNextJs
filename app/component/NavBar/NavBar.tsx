@@ -11,36 +11,36 @@ const NavBar = () => {
               <div className='hidden md:block'>
                 <div className='flex items-baseline ml-20 space-x-4'>
                   
-                  <Link href='/'
-                    className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                  <Link href='/' 
+                    className='text-gray-300   hover:border-orange-300 hover:border-b-2 hover:scale-110 duration-200 hover:text-gray-800 dark:hover:text-white px-3 py-2  text-md font-medium'
                     
                   >
                     {`Accueil`}
                   </Link>
                   <Link href='/about'
-                    className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                    className='text-gray-300   hover:border-orange-300 hover:border-b-2 hover:scale-110 duration-200 hover:text-gray-800 dark:hover:text-white px-3 py-2  text-md font-medium'
                     
                   >
                     {`A propos`}
                   </Link>
                   <Link href='/menu'
-                    className='text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                    className='text-gray-300   hover:border-orange-300 hover:border-b-2 hover:scale-110 duration-200 hover:text-gray-800 dark:hover:text-white px-3 py-2  text-md font-medium'
                   >
                     {`Menu`}
                   </Link>
                   <Link href='/reservation'
-                    className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                    className='text-gray-300   hover:border-orange-300 hover:border-b-2 hover:scale-110 duration-200 hover:text-gray-800 dark:hover:text-white px-3 py-2  text-md font-medium'
                   >
                     {`Reservation`}
                   </Link>
                   <Link href='/galery'
-                    className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                    className='text-gray-300   hover:border-orange-300 hover:border-b-2 hover:scale-110 duration-200 hover:text-gray-800 dark:hover:text-white px-3 py-2  text-md font-medium'
                   >
                     {`Galerie`}
                   </Link>
                   
                   <Link href='/contact'
-                    className='text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium'
+                    className='text-gray-300   hover:border-orange-300 hover:border-b-2 hover:scale-110 duration-200 hover:text-gray-800 dark:hover:text-white px-3 py-2  text-md font-medium'
                   >
                     {`Contact`}
                   </Link>

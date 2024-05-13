@@ -17,13 +17,13 @@ const Cardflex = () => {
             style={{ fontFamily: "cormorant" }}
             className="title-font font-medium text-white"
           >
-            Holden Caulfield
+             {`Alexandre Mottier`}            
           </span>
           <span
             style={{ fontFamily: "Josefin_Sans" }}
             className="text-orange-300 text-sm"
           >
-            UI DEVELOPER
+              {`4 avis`}            
           </span>
         </span>
       </a>

@@ -320,7 +320,7 @@ const AboutPage: React.FC = () => {
             style={{ fontFamily: "Josefin_Sans" }}
             className=" inline-block px-6 py-1   text-sm md:text-lg uppercase border-orange-300 border-y-2"
           >
-            {`Equipes`}
+            {`Équipes`}
           </h3>
           <h1
             style={{ fontFamily: "cormorant" }}
@@ -338,7 +338,7 @@ const AboutPage: React.FC = () => {
                   height={1000}
                   alt="content"
                   className="object-cover object-center h-full w-full"
-                  src="/assets/images/about/befy.png"
+                  src="/assets/images/about/Anna"
                 />
               </div>
               <h2
@@ -444,11 +444,7 @@ const AboutPage: React.FC = () => {
               />
             </svg>
             <p className="font-medium text-sm italic">
-              {`Exploitez les cadres agiles pour fournir une synthèse solide pour
-            des aperçus de haut niveau. Les approches itératives de la stratégie
-            d'entreprise favorisent la pensée collaborative et renforcent
-            davantage la proposition de valeur globale de manière organique et
-            conviviale.`}
+            {`Très belle surprise sur les marches de la vieille ville de Fiana. Je vous recommande les brochettes de zébu sauce vin rouge. Un régal 🥰. Le tout servi avec sourire et bonne humeur. Nous reviendrons. 🇲🇺🇫🇷🇲🇬 Service Repas sur place Type de repas Dîner Cuisine : 5 Service : 5 Ambiance : 5`}
             </p>
             <svg
               className="w-10 h-14 text-orange-300 mx-10"
@@ -471,7 +467,7 @@ const AboutPage: React.FC = () => {
           <a className="mb-6  flex-grow flex flex-col w-screen  items-center">
             <Image
               alt="testimonial"
-              src="/assets/images/home/client2.png"
+              src="/assets/images/home/client1.png"
               width={500}
               height={100}
               className="w-24 h-24 my-5 rounded-full flex-shrink-0 object-cover object-center"
@@ -481,13 +477,13 @@ const AboutPage: React.FC = () => {
                 style={{ fontFamily: "cormorant" }}
                 className="title-font font-medium text-white"
               >
-                {`Holden Caulfield`}
+                {`Alexandre Mottier`}
               </span>
               <span
                 style={{ fontFamily: "Josefin_Sans" }}
                 className="text-orange-300 text-sm"
               >
-                {`UI DEVELOPER`}
+                {`4 avis`}
               </span>
             </span>
           </a>

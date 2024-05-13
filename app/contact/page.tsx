@@ -30,7 +30,7 @@ const Contactpage = () => {
               </div>
               <div className="flex items-center gap-3">
                 <img className="w-9 p-1 rounded-full bg-slate-900" src="/assets/images/icons/Call.png" alt="" />
-                <a href="tel:+261 72 545 75">{`+261 72 545 75`}</a>
+                <a href="tel:+261 34 72 545 75">{`+261 34 72 545 75`}</a>
               </div>
             </div>
           </div>

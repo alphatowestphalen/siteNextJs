@@ -54,7 +54,7 @@ const GaleryPage = () => {
               />
             </div>
             <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-              <p className="text-lg font-bold">Marta Clermont</p>
+              <p className="text-lg font-bold">Nougga Glaccer</p>
               <p className="mb-4 text-xs text-gray-800">Design Team Lead</p>
               <p className="mb-4 text-sm tracking-wide text-gray-800">
                 Amet I love liquorice jujubes pudding croissant I love pudding.
