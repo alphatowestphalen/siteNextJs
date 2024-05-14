@@ -47,7 +47,6 @@ const PageReservation = () => {
       <div className="bg-gray-900 flex justify-center py-8 md:text-xl">
         <BottonWithBorder title={reservation} />
       </div>
-
       <section className="text-gray-600 pb-5 md:pb-0 md:mb-12 body-font overflow-hidden">
         <div className="container px-5  md:pt-24 mx-auto">
           <div className="lg:w-4/5 mx-auto pb-5 flex flex-wrap">
