@@ -9,8 +9,9 @@ const PageReservation = () => {
   const [email, setEmial] = useState("");
   const [number, setNumber] = useState("");
   const [dateReservation, setDateReservation] = useState("");
-  const [hourse, setHourse] = useState(""); 
+  const [hourse, setHourse] = useState("");
   const [message, setMessage] = useState("");
+  const [personnes, setPersonnes] = useState("");
 
   const handleSendEmail = async () => {
     const serviceID = "service_latable";
@@ -24,7 +25,7 @@ const PageReservation = () => {
       email: email,
       number: number,
       dateReservation: dateReservation,
-      hours: hourse,      
+      hours: hourse,
       message: message,
     };
 
@@ -73,59 +74,89 @@ const PageReservation = () => {
                     {`Les gens, la cuisine et les emplacements de choix font de Rodich l'endroit parfait pour que de bons amis et la famille se réunissent et passent un bon moment.`}
                   </p>
                   <div className="grid pb-8 md:grid-cols-2 gap-5">
-                    <input
-                      type="text"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      id="footer-field"
-                      name="name"
-                      placeholder="Nom"
-                      className="w-full md:w-48  border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmial(e.target.value)}
-                      id="footer-field"
-                      name="email"
-                      placeholder="test@example.com"
-                      className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                    <input
-                      type="Telephone"
-                      value={number}
-                      onChange={(e) => setNumber(e.target.value)}
-                      id="footer-field"
-                      name="number"
-                      placeholder="+261 34 00 000 00 "
-                      className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                    <input
-                      type="date"
-                      value={dateReservation}
-                      onChange={(e) => setDateReservation(e.target.value)}
-                      id="footer-field"
-                      name="dateReservation"
-                      placeholder="11/11/2024"
-                      className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                    <input
-                      type="time"
-                      value={hourse}
-                      onChange={(e) => setHourse(e.target.value)}
-                      id="footer-field"
-                      name="hourse"
-                      placeholder="12:00"
-                      className="w-full md:w-[397px] bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
-                    />
+                    <div>
+                      <label htmlFor="">
+                        Votre Nom <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        id="footer-field"
+                        name="name"
+                        placeholder="Nom"
+                        className="w-full md:w-48  border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="">
+                        Votre adresse Email <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmial(e.target.value)}
+                        id="footer-field"
+                        name="email"
+                        placeholder="test@example.com"
+                        className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="">Votre numero Tel </label>
+                      <input
+                        type="Telephone"
+                        value={number}
+                        onChange={(e) => setNumber(e.target.value)}
+                        id="footer-field"
+                        name="number"
+                        placeholder="+261 34 00 000 00 "
+                        className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="number">Nombre de  Personne </label>
+                      <input 
+                        type="text"
+                        value={personnes}
+                        onChange={(e) => setPersonnes(e.target.value)}
+                        id="footer-field"
+                        name="personnes"
+                        placeholder="12 personnes "
+                        className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="">Date Arrivées</label>
+                      <input
+                        type="date"
+                        value={dateReservation}
+                        onChange={(e) => setDateReservation(e.target.value)}
+                        id="footer-field"
+                        name="dateReservation"
+                        placeholder="11/11/2024"
+                        className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="">Heurs</label>
+                      <input
+                        type="time"
+                        value={hourse}
+                        onChange={(e) => setHourse(e.target.value)}
+                        id="footer-field"
+                        name="hourse"
+                        placeholder="12:00"
+                        className="w-full md:w-48 bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1  leading-8 transition-colors duration-200 ease-in-out"
+                      />
+                    </div>
                   </div>
                   <textarea
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     className="w-full mb-6  md:w-[397px] bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1   leading-8 transition-colors duration-200 ease-in-out"
                     name="message"
-                  >
-                  </textarea>
+                  ></textarea>
                   <button
                     type="submit"
                     style={{ fontFamily: "Josefin_Sans" }}
