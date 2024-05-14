@@ -124,9 +124,7 @@ const PageReservation = () => {
                     onChange={(e) => setMessage(e.target.value)}
                     className="w-full mb-6  md:w-[397px] bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1   leading-8 transition-colors duration-200 ease-in-out"
                     name="message"
-                    id=""
                   >
-                    {`Message`}
                   </textarea>
                   <button
                     type="submit"
