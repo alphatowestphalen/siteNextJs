@@ -11,7 +11,7 @@ const PageReservation = () => {
   const [dateReservation, setDateReservation] = useState("");
   const [hourse, setHourse] = useState("");
   const [message, setMessage] = useState("");
-  const [personnes, setPersonnes] = useState("");
+  const [personnesnbr, setPersonnesnbr] = useState("");
 
   const handleSendEmail = async () => {
     const serviceID = "service_latable";
@@ -24,6 +24,7 @@ const PageReservation = () => {
       name: name,
       email: email,
       number: number,
+      personnes: personnesnbr,
       dateReservation: dateReservation,
       hours: hourse,
       message: message,
@@ -41,6 +42,13 @@ const PageReservation = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     handleSendEmail();
+    setEmial("");
+    setName("");
+    setNumber("");
+    setDateReservation("");
+    setHourse("");
+    setMessage("");
+    setPersonnesnbr("");    
   };
 
   return (
@@ -80,7 +88,6 @@ const PageReservation = () => {
                       </label>
                       <input
                         type="text"
-                        value={name}
                         onChange={(e) => setName(e.target.value)}
                         id="footer-field"
                         name="name"
@@ -94,7 +101,6 @@ const PageReservation = () => {
                       </label>
                       <input
                         type="email"
-                        value={email}
                         onChange={(e) => setEmial(e.target.value)}
                         id="footer-field"
                         name="email"
@@ -103,10 +109,9 @@ const PageReservation = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="">Votre numero Tel </label>
+                      <label htmlFor="">Votre numero Tel <span className="text-red-500">*</span></label>
                       <input
                         type="Telephone"
-                        value={number}
                         onChange={(e) => setNumber(e.target.value)}
                         id="footer-field"
                         name="number"
@@ -115,11 +120,10 @@ const PageReservation = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="number">Nombre de  Personne </label>
+                      <label htmlFor="number">Nombre de  Personne <span className="text-red-500">*</span></label>
                       <input 
                         type="text"
-                        value={personnes}
-                        onChange={(e) => setPersonnes(e.target.value)}
+                        onChange={(e) => setPersonnesnbr(e.target.value)}
                         id="footer-field"
                         name="personnes"
                         placeholder="12 personnes "
@@ -127,7 +131,7 @@ const PageReservation = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="">Date Arrivées</label>
+                      <label htmlFor="">Date Arrivées <span className="text-red-500">*</span></label>
                       <input
                         type="date"
                         value={dateReservation}
@@ -139,7 +143,7 @@ const PageReservation = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="">Heurs</label>
+                      <label htmlFor="">Heurs <span className="text-red-500">*</span></label>
                       <input
                         type="time"
                         value={hourse}
@@ -151,12 +155,17 @@ const PageReservation = () => {
                       />
                     </div>
                   </div>
-                  <textarea
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    className="w-full mb-6  md:w-[397px] bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1   leading-8 transition-colors duration-200 ease-in-out"
-                    name="message"
-                  ></textarea>
+                  <div>
+                    <label htmlFor="">
+                      Message <span className="text-red-500">*</span>
+                    </label>
+                    <textarea
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      className="w-full mb-6  md:w-[397px] bg-transparent border-2 text-gray-600 border-gray-600 px-3 focus:ring-indigo-200 text-base outline-none py-1   leading-8 transition-colors duration-200 ease-in-out"
+                      name="message"
+                    ></textarea>
+                  </div>
                   <button
                     type="submit"
                     style={{ fontFamily: "Josefin_Sans" }}

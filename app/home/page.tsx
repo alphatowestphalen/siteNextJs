@@ -10,9 +10,9 @@ const HomePage: React.FC = () => {
   return (
     <>
       <div className=" pt-10 flex justify-center overflow-hidden  bg-white dark:bg-gray-900">
-        <div className="container relative flex pr-12 py-12 ml-12 ">
-          <div className="relative z-20 flex justify-between flex-col sm:w-2/3 lg:w-2/5">
-            <span className="w-20 h-2 mb-12 bg-gray-800 dark:bg-white"></span>
+        <div className="container   md:flex-row gap-5 lg:flex lg:justify-around justify-center py-12 ">
+          <div className=" md:flex-row  justify-center  text-center  pb-8 lg:pb-0 w-full md:w-2/5 lg:text-left ">
+            <span className="w-20 h-2 mb-12 bg-gray-800 dark:bg-white lg:block hidden"></span>
             <h1
               style={{
                 fontFamily: "cormorant",
@@ -47,7 +47,7 @@ const HomePage: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="relative z-50 hidden md:ml-52 sm:block sm:w-1/3 lg:w-5/6">
+          <div className="relative z-50 ">
             <Image
               alt="image"
               width={600}
@@ -61,8 +61,8 @@ const HomePage: React.FC = () => {
 
       <section className="text-gray-600 bg-rose-50 body-font">
         <div className="container  px-5 py-20 mx-auto">
-          <div className="flex  flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0">
-            <div className="p-4 md:w-1/3 flex">
+          <div className="lg:flex flex-none  gap-8 justify-center sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0">
+            <div className="p-4  flex ">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
                   alt="location"
@@ -85,7 +85,7 @@ const HomePage: React.FC = () => {
             </div>
             <div
               style={{ fontFamily: "Josefin_Sans" }}
-              className="p-4 md:w-1/3 flex"
+              className="p-4 flex"
             >
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
@@ -106,7 +106,7 @@ const HomePage: React.FC = () => {
             </div>
             <div
               style={{ fontFamily: "Josefin_Sans" }}
-              className="p-4 md:w-1/3 flex"
+              className="p-4  flex"
             >
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                 <Image
@@ -129,7 +129,7 @@ const HomePage: React.FC = () => {
         </div>
         <section className="text-gray-700 text-bol body-font overflow-hidden">
           <div className="container  px-5 py-5 mb-16 mx-auto ">
-            <div className="lg:w-4/5 mx-auto flex flex-wrap">
+            <div className="lg:w-4/5 mx-auto flex  justify-center w-full flex-wrap">
               <Image
                 width={400}
                 height={100}
@@ -171,7 +171,7 @@ const HomePage: React.FC = () => {
 
       {/* MENU */}
       <section className="text-gray-600 body-font">
-        <div className="container  px-5 mt-20 md:pt-20 mx-auto justify-center flex flex-wrap">
+        <div className=" md:pt-20  flex-row justify-center lg:flex  gap-12">
           <div className=" mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <h3
               style={{ fontFamily: "Josefin_Sans" }}
@@ -200,121 +200,123 @@ const HomePage: React.FC = () => {
             />
             {/* <img alt='feature' class='object-cover object-center h-full w-full' src='https://dummyimage.com/460x500'> */}
           </div>
-          <div className="flex flex-col  flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-24 lg:text-left text-center">
-            <h1
-              style={{ fontFamily: "cormorsant" }}
-              className="w-auto font-semibold text-2xl leading-none text-gray-800  font-bebas-neue sm:text-8x"
-            >
-              Entrées (15 000Ar)
-            </h1>
-            <div className=" md:w-2/3 pt-9 flex">
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
-                <Image
-                  alt="vilanykely"
-                  src="/assets/images/home/vilanykely.png"
-                  width={100}
-                  height={50}
-                  className="rounded-full"
-                />
-              </div>
-              <div className="flex-grow text-left pl-3">
-                <h2
-                  style={{ fontFamily: "cormorant" }}
-                  className="text-gray-900 text-lg pl-0 title-font font-medium "
-                >
-                  {`Salady Malagasy`}
-                </h2>
-                <p
-                  style={{ fontFamily: "Josefin_Sans" }}
-                  className="leading-relaxed text-base"
-                >
-                  {`Candied Jerusalem artichokes.`}
-                </p>
-              </div>
-            </div>
-            <div className=" md:w-2/3 pt-4 flex">
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
-                <Image
-                  alt="vilanykely"
-                  src="/assets/images/home/vilanykely.png"
-                  width={100}
-                  height={50}
-                  className="rounded-full"
-                />
-              </div>
-              <div className="flex-grow text-left pl-3">
-                <h2
-                  style={{ fontFamily: "cormorant" }}
-                  className="text-gray-900 text-lg pl-0 title-font font-medium "
-                >
-                  {`Assiette du chef`}
-                </h2>
-                <p
-                  style={{ fontFamily: "Josefin_Sans" }}
-                  className="leading-relaxed text-base"
-                >
-                  {`Candied Jerusalem artichokes.`}
-                </p>
-              </div>
-            </div>
-            <div className=" md:w-2/3 pt-4 flex">
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
-                <Image
-                  alt="vilanykely"
-                  src="/assets/images/home/vilanykely.png"
-                  width={100}
-                  height={50}
-                  className="rounded-full"
-                />
-              </div>
-              <div className="flex-grow text-left pl-3">
-                <h2
-                  style={{ fontFamily: "cormorant" }}
-                  className="text-gray-900 text-lg pl-0 title-font font-medium "
-                >
-                  {`Tartare du rova`}
-                </h2>
-                <p
-                  style={{ fontFamily: "Josefin_Sans" }}
-                  className="leading-relaxed text-base"
-                >
-                  {`Candied Jerusalem artichokes.`}
-                </p>
-              </div>
-            </div>
-            <div className=" md:w-2/3 pt-4 flex">
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
-                <Image
-                  alt="vilanykely"
-                  src="/assets/images/home/vilanykely.png"
-                  width={100}
-                  height={50}
-                  className="rounded-full"
-                />
-              </div>
-              <div className="flex-grow text-left pl-3">
-                <h2
-                  style={{ fontFamily: "cormorant" }}
-                  className="text-gray-900 text-lg pl-0 title-font font-medium "
-                >
-                  {`Mille Feuille de légume`}
-                </h2>
-                <p
-                  style={{ fontFamily: "Josefin_Sans" }}
-                  className="leading-relaxed text-base"
-                >
-                  {`Candied Jerusalem artichokes.`}
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col  flex-wrap mt-9 lg:py-6 lg:text-left text-center">
+          <div className="md:grid md:items-stretch  md:grid-cols-2 gap-5 flex flex-col  items-center ">
+            <div className="shadow-md shadow-slate-500 px-8 rounded-lg  py-3 ">
               <h1
                 style={{ fontFamily: "cormorsant" }}
-                className="w-auto font-semibold text-2xl leading-none text-gray-800 -ml-12 md:ml-0 sm:text-8x"
+                className="w-auto font-semibold text-2xl leading-none text-gray-800  font-bebas-neue sm:text-8x"
+              >
+                Entrées (15 000Ar)
+              </h1>
+              <div className="  pt-9 flex">
+                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
+                  <Image
+                    alt="vilanykely"
+                    src="/assets/images/home/vilanykely.png"
+                    width={100}
+                    height={50}
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="flex-grow text-left pl-3">
+                  <h2
+                    style={{ fontFamily: "cormorant" }}
+                    className="text-gray-900 text-lg pl-0 title-font font-medium "
+                  >
+                    {`Salady Malagasy`}
+                  </h2>
+                  <p
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="leading-relaxed text-base"
+                  >
+                    {`Salade / Fromage / Tomate`}
+                  </p>
+                </div>
+              </div>
+              <div className=" pt-4 flex">
+                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
+                  <Image
+                    alt="vilanykely"
+                    src="/assets/images/home/vilanykely.png"
+                    width={100}
+                    height={50}
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="flex-grow text-left pl-3">
+                  <h2
+                    style={{ fontFamily: "cormorant" }}
+                    className="text-gray-900 text-lg pl-0 title-font font-medium "
+                  >
+                    {`Assiette du chef`}
+                  </h2>
+                  <p
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="leading-relaxed text-base"
+                  >
+                    {`Candied Jerusalem artichokes.`}
+                  </p>
+                </div>
+              </div>
+              <div className=" pt-4 flex">
+                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
+                  <Image
+                    alt="vilanykely"
+                    src="/assets/images/home/vilanykely.png"
+                    width={100}
+                    height={50}
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="flex-grow text-left pl-3">
+                  <h2
+                    style={{ fontFamily: "cormorant" }}
+                    className="text-gray-900 text-lg pl-0 title-font font-medium "
+                  >
+                    {`Tartare du rova`}
+                  </h2>
+                  <p
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="leading-relaxed text-base"
+                  >
+                    {`Candied Jerusalem artichokes.`}
+                  </p>
+                </div>
+              </div>
+              <div className=" pt-4 flex">
+                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
+                  <Image
+                    alt="vilanykely"
+                    src="/assets/images/home/vilanykely.png"
+                    width={100}
+                    height={50}
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="flex-grow text-left pl-3">
+                  <h2
+                    style={{ fontFamily: "cormorant" }}
+                    className="text-gray-900 text-lg pl-0 title-font font-medium "
+                  >
+                    {`Mille Feuille de légume`}
+                  </h2>
+                  <p
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="leading-relaxed text-base"
+                  >
+                    {`Candied Jerusalem artichokes.`}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="shadow-md shadow-slate-500 px-8 rounded-lg  py-3">
+              <h1
+                style={{ fontFamily: "cormorsant" }}
+                className="w-auto font-semibold text-2xl leading-none text-gray-800  font-bebas-neue sm:text-8x"
               >
                 {`Plats (20 000Ar)`}
               </h1>
-              <div className=" md:w-2/3 pt-9 flex">
+              <div className=" pt-9 flex">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                   <Image
                     alt="vilanykely"
@@ -335,11 +337,11 @@ const HomePage: React.FC = () => {
                     style={{ fontFamily: "Josefin_Sans" }}
                     className="leading-relaxed text-base"
                   >
-                    {`Candied Jerusalem artichokes.`}
+                    {`Zebu ou  Porc / Sauce Speciale TDR `}
                   </p>
                 </div>
               </div>
-              <div className=" md:w-2/3 pt-4 flex">
+              <div className=" pt-4 flex">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                   <Image
                     alt="vilanykely"
@@ -360,11 +362,11 @@ const HomePage: React.FC = () => {
                     style={{ fontFamily: "Josefin_Sans" }}
                     className="leading-relaxed text-base"
                   >
-                    {`Candied Jerusalem artichokes.`}
+                    {`Poulet ou Zebu / Sauce bechamel`}
                   </p>
                 </div>
               </div>
-              <div className=" md:w-2/3 pt-4 flex">
+              <div className=" pt-4 flex">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                   <Image
                     alt="vilanykely"
@@ -385,11 +387,11 @@ const HomePage: React.FC = () => {
                     style={{ fontFamily: "Josefin_Sans" }}
                     className="leading-relaxed text-base"
                   >
-                    {`Candied Jerusalem artichokes.`}
+                    {`Legumes  `}
                   </p>
                 </div>
               </div>
-              <div className=" md:w-2/3 py-4 flex">
+              <div className=" py-4 flex">
                 <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
                   <Image
                     alt="vilanykely"
@@ -410,92 +412,91 @@ const HomePage: React.FC = () => {
                     style={{ fontFamily: "Josefin_Sans" }}
                     className="leading-relaxed text-base"
                   >
+                    {`Poulet ou Porc `}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="shadow-md shadow-slate-500 px-8 rounded-lg  py-3">
+              <h1
+                style={{ fontFamily: "cormorsant" }}
+                className="w-auto font-semibold text-2xl leading-none text-gray-800  font-bebas-neue sm:text-8x"
+              >
+                {`Desserts (14 000Ar)`}
+              </h1>
+              <div className=" pt-9 flex">
+                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
+                  <Image
+                    alt="vilanykely"
+                    src="/assets/images/home/vilanykely.png"
+                    width={100}
+                    height={50}
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="flex-grow text-left pl-3">
+                  <h2
+                    style={{ fontFamily: "cormorant" }}
+                    className="text-gray-900 text-lg pl-0 title-font font-medium "
+                  >
+                    {`Brochette de fruit carameliser`}
+                  </h2>
+                  <p
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="leading-relaxed text-base"
+                  >
                     {`Candied Jerusalem artichokes.`}
                   </p>
                 </div>
               </div>
-
-              <div className="flex flex-col pt-4 flex-wrap lg:py-6 -mb-10  lg:text-left text-center">
-                <h1
-                  style={{ fontFamily: "cormorsant" }}
-                  className="w-auto font-semibold text-2xl leading-none text-gray-800  font-bebas-neue sm:text-8x"
-                >
-                  {`Desserts (14 000Ar)`}
-                </h1>
-                <div className=" md:w-2/3 pt-9 flex">
-                  <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
-                    <Image
-                      alt="vilanykely"
-                      src="/assets/images/home/vilanykely.png"
-                      width={100}
-                      height={50}
-                      className="rounded-full"
-                    />
-                  </div>
-                  <div className="flex-grow text-left pl-3">
-                    <h2
-                      style={{ fontFamily: "cormorant" }}
-                      className="text-gray-900 text-lg pl-0 title-font font-medium "
-                    >
-                      {`Brochette de fruit carameliser`}
-                    </h2>
-                    <p
-                      style={{ fontFamily: "Josefin_Sans" }}
-                      className="leading-relaxed text-base"
-                    >
-                      {`Candied Jerusalem artichokes.`}
-                    </p>
-                  </div>
+              <div className=" pt-4 flex">
+                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
+                  <Image
+                    alt="vilanykely"
+                    src="/assets/images/home/vilanykely.png"
+                    width={100}
+                    height={50}
+                    className="rounded-full"
+                  />
                 </div>
-                <div className=" md:w-2/3 pt-4 flex">
-                  <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
-                    <Image
-                      alt="vilanykely"
-                      src="/assets/images/home/vilanykely.png"
-                      width={100}
-                      height={50}
-                      className="rounded-full"
-                    />
-                  </div>
-                  <div className="flex-grow text-left pl-3">
-                    <h2
-                      style={{ fontFamily: "cormorant" }}
-                      className="text-gray-900 text-lg pl-0 title-font font-medium "
-                    >
-                      Fondant au chaucolat
-                    </h2>
-                    <p
-                      style={{ fontFamily: "Josefin_Sans" }}
-                      className="leading-relaxed text-base"
-                    >
-                      {`Candied Jerusalem artichokes.`}
-                    </p>
-                  </div>
+                <div className="flex-grow text-left pl-3">
+                  <h2
+                    style={{ fontFamily: "cormorant" }}
+                    className="text-gray-900 text-lg pl-0 title-font font-medium "
+                  >
+                    Fondant au chaucolat
+                  </h2>
+                  <p
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="leading-relaxed text-base"
+                  >
+                    {`Candied Jerusalem artichokes.`}
+                  </p>
                 </div>
-                <div className=" md:w-2/3 pt-4 flex">
-                  <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
-                    <Image
-                      alt="vilanykely"
-                      src="/assets/images/home/vilanykely.png"
-                      width={100}
-                      height={50}
-                      className="rounded-full"
-                    />
-                  </div>
-                  <div className="flex-grow text-left pl-3">
-                    <h2
-                      style={{ fontFamily: "cormorant" }}
-                      className="text-gray-900 text-lg pl-0 title-font font-medium "
-                    >
-                      Nougat glacé
-                    </h2>
-                    <p
-                      style={{ fontFamily: "Josefin_Sans" }}
-                      className="leading-relaxed text-base"
-                    >
-                      {`Candied Jerusalem artichokes.`}
-                    </p>
-                  </div>
+              </div>
+              <div className=" pt-4 flex">
+                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 text-white mb-4 flex-shrink-0">
+                  <Image
+                    alt="vilanykely"
+                    src="/assets/images/home/vilanykely.png"
+                    width={100}
+                    height={50}
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="flex-grow text-left pl-3">
+                  <h2
+                    style={{ fontFamily: "cormorant" }}
+                    className="text-gray-900 text-lg pl-0 title-font font-medium "
+                  >
+                    Nougat glacé
+                  </h2>
+                  <p
+                    style={{ fontFamily: "Josefin_Sans" }}
+                    className="leading-relaxed text-base"
+                  >
+                    {`Candied Jerusalem artichokes.`}
+                  </p>
                 </div>
               </div>
             </div>
@@ -801,7 +802,7 @@ const HomePage: React.FC = () => {
             </a>
           </div>
         </div>
-      </section>  
+      </section>
 
       {/* Ce que nous offrons. */}
       <section className="text-gray-600 bg-slate-900 body-font">
